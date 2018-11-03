@@ -1,0 +1,39 @@
+% This file was created by matlab2tikz.
+%
+\begin{tikzpicture}
+
+\begin{axis}[%
+width=0.951\figurewidth,
+height=\figureheight,
+at={(0\figurewidth,0\figureheight)},
+scale only axis,
+bar shift auto,
+log origin=infty,
+xmin=0,
+xmax=6,
+xtick={1,2,3,4,5},
+xticklabels={{UPF},{PFC},{UPFC},{PFS},{UPFS}},
+ymode=log,
+ymin=1,
+ymax=8.20356987474318,
+yminorticks=true,
+ylabel style={font=\color{white!15!black}},
+ylabel={Computation Time / computation time PF},
+axis background/.style={fill=white},
+title style={font=\bfseries},
+title={Trajectory 4 with 9 landmarks -- mean computation time relative to PF after 100 runs},
+ymajorgrids,
+yminorgrids,
+legend style={legend cell align=left, align=left, draw=white!15!black}
+]
+\addplot[ybar, bar width=0.4, draw=black, area legend] table[row sep=crcr] {%
+1	1.63902692294153\\
+2	1.21583647997973\\
+3	1.8137216027692\\
+4	7.70615062269076\\
+5	8.20356987474318\\
+};
+\addlegendentry{data1}
+
+\end{axis}
+\end{tikzpicture}%

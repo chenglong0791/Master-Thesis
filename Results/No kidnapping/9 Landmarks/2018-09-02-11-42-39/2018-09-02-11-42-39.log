@@ -1,0 +1,5225 @@
+Date:                      02 Sep 2018, 11:42:39h
+Script:                    experiments.m
+
+
+--- Data Set ----------------------------------------------
+
+File name:                 Trajectory 4 with 9 landmarks
+
+Sigma velocity:            0.040 m/s
+Sigma Euler angles:        0.100 °
+
+Landmarks:                       x         y         z 
+                            -258.4 m     -1.5 m    265.6 m
+                            -250.7 m    -10.0 m    259.4 m
+                            -267.6 m     12.5 m    259.7 m
+                            -279.9 m   -256.4 m   -256.6 m
+                             -29.6 m     10.0 m      2.6 m
+                             252.2 m    251.4 m    225.7 m
+                            -246.6 m   -229.9 m   -234.4 m
+                            -241.4 m   -278.9 m   -239.2 m
+                            -256.3 m   -224.8 m   -263.0 m
+
+
+--- General Settings --------------------------------------
+
+No. of runs:               100
+
+No. of particles PF:       100
+No. of particles UPF:      10
+No. of particles PFC:      100
+No. of particles UPFC:     10
+No. of particles PFS:      100
+No. of particles UPFS:     10
+
+Scale  init. search space: 1.0
+Volume init. search space: 108.000000 * 10^6 m^3
+Lower and upper bounds:         x         y         z
+                           -300.0 m  -300.0 m  -300.0 m
+                            300.0 m   300.0 m     0.0 m
+
+Sigma sys. n. vel. PF:     4.000 m
+Sigma sys. n. vel. PFC:    0.800 m
+Sigma sys. n. ang. PF:     10.000 °
+Sigma sys. n. ang. PFC:    2.000 °
+
+Sigma likelihood PF:       15.000 m
+Sigma likelihood UPF:      3.000 m
+Sigma likelihood PFC:      1.500 m
+Sigma likelihood UPFC:     0.300 m
+Sigma likelihood PFS:      1.500 m
+Sigma likelihood UPFS:     0.300 m
+
+Sigma trans. prior: UPF:   41.745 m
+Sigma trans. prior: UPFC:  20.873 m
+Sigma trans. prior: UPFS:  20.873 m
+
+Sigma P0 UPF:              100.000 m
+Sigma P0 UPFC:             1.000 m
+Sigma P0 UPFS:             1.000 m
+
+Sigma Q  UPF:              0.040 m  0.100 °
+Sigma Q  UPFC:             0.020 m  0.050 °
+Sigma Q  UPFS:             0.020 m  0.050 °
+
+Sigma R  UPF:              0.030 m
+Sigma R  UPFC:             0.030 m
+Sigma R  UPFS:             0.030 m
+
+
+--- Estimation Results ------------------------------------------
+
+
+--- Run no. 1 -----------------------
+
+
+--- Particle filter ---
+
+Elapsed time:            4.1 sec
+RMSE:                    16.68 m  
+Error < 1.0 m after:     22.0 sec
+
+
+--- Unscented particle filter ---
+
+Elapsed time:            5.8 sec
+RMSE:                    2.22 m  
+Error < 1.0 m after:     3.0 sec
+
+
+--- Particle filter with contractor ---
+
+Elapsed time:            5.2 sec
+RMSE:                    0.28 m  
+No. weights set to zero: 872 (4.4 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with contractor ---
+
+Elapsed time:            6.3 sec
+RMSE:                    0.24 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--- Particle filter with SIVIA ---
+
+Elapsed time:            19.1 sec
+RMSE:                    0.27 m  
+No. weights set to zero: 876 (4.4 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with SIVIA ---
+
+Elapsed time:            22.0 sec
+RMSE:                    0.24 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--------------------------------------------------------
+
+--- Run no. 2 -----------------------
+
+
+--- Particle filter ---
+
+Elapsed time:            2.5 sec
+RMSE:                    8.47 m  
+Error < 1.0 m after:     14.0 sec
+
+
+--- Unscented particle filter ---
+
+Elapsed time:            4.1 sec
+RMSE:                    2.23 m  
+Error < 1.0 m after:     3.0 sec
+
+
+--- Particle filter with contractor ---
+
+Elapsed time:            3.0 sec
+RMSE:                    0.28 m  
+No. weights set to zero: 929 (4.6 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with contractor ---
+
+Elapsed time:            4.9 sec
+RMSE:                    0.23 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--- Particle filter with SIVIA ---
+
+Elapsed time:            19.8 sec
+RMSE:                    0.28 m  
+No. weights set to zero: 824 (4.1 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with SIVIA ---
+
+Elapsed time:            21.0 sec
+RMSE:                    0.24 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--------------------------------------------------------
+
+--- Run no. 3 -----------------------
+
+
+--- Particle filter ---
+
+Elapsed time:            2.5 sec
+RMSE:                    12.69 m  
+Error < 1.0 m after:     22.0 sec
+
+
+--- Unscented particle filter ---
+
+Elapsed time:            4.1 sec
+RMSE:                    0.86 m  
+Error < 1.0 m after:     2.0 sec
+
+
+--- Particle filter with contractor ---
+
+Elapsed time:            3.0 sec
+RMSE:                    0.29 m  
+No. weights set to zero: 917 (4.6 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with contractor ---
+
+Elapsed time:            4.8 sec
+RMSE:                    0.24 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--- Particle filter with SIVIA ---
+
+Elapsed time:            19.6 sec
+RMSE:                    0.28 m  
+No. weights set to zero: 901 (4.5 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with SIVIA ---
+
+Elapsed time:            23.1 sec
+RMSE:                    0.23 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--------------------------------------------------------
+
+--- Run no. 4 -----------------------
+
+
+--- Particle filter ---
+
+Elapsed time:            2.5 sec
+RMSE:                    4.47 m  
+Error < 1.0 m after:     14.0 sec
+
+
+--- Unscented particle filter ---
+
+Elapsed time:            4.2 sec
+RMSE:                    0.94 m  
+Error < 1.0 m after:     3.0 sec
+
+
+--- Particle filter with contractor ---
+
+Elapsed time:            3.0 sec
+RMSE:                    0.27 m  
+No. weights set to zero: 865 (4.3 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with contractor ---
+
+Elapsed time:            4.5 sec
+RMSE:                    0.24 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--- Particle filter with SIVIA ---
+
+Elapsed time:            18.1 sec
+RMSE:                    0.27 m  
+No. weights set to zero: 884 (4.4 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with SIVIA ---
+
+Elapsed time:            19.3 sec
+RMSE:                    0.23 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--------------------------------------------------------
+
+--- Run no. 5 -----------------------
+
+
+--- Particle filter ---
+
+Elapsed time:            2.4 sec
+RMSE:                    10.13 m  
+Error < 1.0 m after:     15.0 sec
+
+
+--- Unscented particle filter ---
+
+Elapsed time:            4.0 sec
+RMSE:                    0.34 m  
+Error < 1.0 m after:     2.0 sec
+
+
+--- Particle filter with contractor ---
+
+Elapsed time:            3.0 sec
+RMSE:                    0.29 m  
+No. weights set to zero: 914 (4.6 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with contractor ---
+
+Elapsed time:            4.4 sec
+RMSE:                    0.23 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--- Particle filter with SIVIA ---
+
+Elapsed time:            18.3 sec
+RMSE:                    0.28 m  
+No. weights set to zero: 837 (4.2 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with SIVIA ---
+
+Elapsed time:            19.5 sec
+RMSE:                    0.23 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--------------------------------------------------------
+
+--- Run no. 6 -----------------------
+
+
+--- Particle filter ---
+
+Elapsed time:            2.4 sec
+RMSE:                    4.81 m  
+Error < 1.0 m after:     12.0 sec
+
+
+--- Unscented particle filter ---
+
+Elapsed time:            4.1 sec
+RMSE:                    2.13 m  
+Error < 1.0 m after:     3.0 sec
+
+
+--- Particle filter with contractor ---
+
+Elapsed time:            3.0 sec
+RMSE:                    0.28 m  
+No. weights set to zero: 951 (4.8 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with contractor ---
+
+Elapsed time:            4.5 sec
+RMSE:                    0.24 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--- Particle filter with SIVIA ---
+
+Elapsed time:            20.9 sec
+RMSE:                    0.29 m  
+No. weights set to zero: 895 (4.5 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with SIVIA ---
+
+Elapsed time:            20.1 sec
+RMSE:                    0.24 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--------------------------------------------------------
+
+--- Run no. 7 -----------------------
+
+
+--- Particle filter ---
+
+Elapsed time:            2.5 sec
+RMSE:                    9.94 m  
+Error < 1.0 m after:     18.0 sec
+
+
+--- Unscented particle filter ---
+
+Elapsed time:            4.1 sec
+RMSE:                    1.78 m  
+Error < 1.0 m after:     3.0 sec
+
+
+--- Particle filter with contractor ---
+
+Elapsed time:            3.0 sec
+RMSE:                    0.27 m  
+No. weights set to zero: 958 (4.8 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with contractor ---
+
+Elapsed time:            4.9 sec
+RMSE:                    0.23 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--- Particle filter with SIVIA ---
+
+Elapsed time:            17.8 sec
+RMSE:                    0.26 m  
+No. weights set to zero: 827 (4.1 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with SIVIA ---
+
+Elapsed time:            20.1 sec
+RMSE:                    0.24 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--------------------------------------------------------
+
+--- Run no. 8 -----------------------
+
+
+--- Particle filter ---
+
+Elapsed time:            2.4 sec
+RMSE:                    9.59 m  
+Error < 1.0 m after:     15.0 sec
+
+
+--- Unscented particle filter ---
+
+Elapsed time:            4.1 sec
+RMSE:                    1.73 m  
+Error < 1.0 m after:     3.0 sec
+
+
+--- Particle filter with contractor ---
+
+Elapsed time:            3.0 sec
+RMSE:                    0.29 m  
+No. weights set to zero: 875 (4.4 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with contractor ---
+
+Elapsed time:            4.4 sec
+RMSE:                    0.24 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--- Particle filter with SIVIA ---
+
+Elapsed time:            17.7 sec
+RMSE:                    0.28 m  
+No. weights set to zero: 919 (4.6 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with SIVIA ---
+
+Elapsed time:            19.1 sec
+RMSE:                    0.24 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--------------------------------------------------------
+
+--- Run no. 9 -----------------------
+
+
+--- Particle filter ---
+
+Elapsed time:            2.4 sec
+RMSE:                    6.13 m  
+Error < 1.0 m after:     15.0 sec
+
+
+--- Unscented particle filter ---
+
+Elapsed time:            4.0 sec
+RMSE:                    1.51 m  
+Error < 1.0 m after:     2.0 sec
+
+
+--- Particle filter with contractor ---
+
+Elapsed time:            3.0 sec
+RMSE:                    0.28 m  
+No. weights set to zero: 904 (4.5 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with contractor ---
+
+Elapsed time:            4.4 sec
+RMSE:                    0.23 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--- Particle filter with SIVIA ---
+
+Elapsed time:            17.8 sec
+RMSE:                    0.27 m  
+No. weights set to zero: 903 (4.5 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with SIVIA ---
+
+Elapsed time:            19.1 sec
+RMSE:                    0.23 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--------------------------------------------------------
+
+--- Run no. 10 -----------------------
+
+
+--- Particle filter ---
+
+Elapsed time:            2.4 sec
+RMSE:                    6.35 m  
+Error < 1.0 m after:     21.0 sec
+
+
+--- Unscented particle filter ---
+
+Elapsed time:            3.7 sec
+RMSE:                    0.42 m  
+Error < 1.0 m after:     2.0 sec
+
+
+--- Particle filter with contractor ---
+
+Elapsed time:            2.8 sec
+RMSE:                    0.29 m  
+No. weights set to zero: 910 (4.5 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with contractor ---
+
+Elapsed time:            4.3 sec
+RMSE:                    0.23 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--- Particle filter with SIVIA ---
+
+Elapsed time:            17.7 sec
+RMSE:                    0.28 m  
+No. weights set to zero: 869 (4.3 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with SIVIA ---
+
+Elapsed time:            19.1 sec
+RMSE:                    0.24 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--------------------------------------------------------
+
+--- Run no. 11 -----------------------
+
+
+--- Particle filter ---
+
+Elapsed time:            2.4 sec
+RMSE:                    2.79 m  
+Error < 1.0 m after:     9.0 sec
+
+
+--- Unscented particle filter ---
+
+Elapsed time:            4.1 sec
+RMSE:                    1.18 m  
+Error < 1.0 m after:     3.0 sec
+
+
+--- Particle filter with contractor ---
+
+Elapsed time:            3.0 sec
+RMSE:                    0.28 m  
+No. weights set to zero: 899 (4.5 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with contractor ---
+
+Elapsed time:            4.4 sec
+RMSE:                    0.24 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--- Particle filter with SIVIA ---
+
+Elapsed time:            17.8 sec
+RMSE:                    0.29 m  
+No. weights set to zero: 861 (4.3 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with SIVIA ---
+
+Elapsed time:            19.7 sec
+RMSE:                    0.24 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--------------------------------------------------------
+
+--- Run no. 12 -----------------------
+
+
+--- Particle filter ---
+
+Elapsed time:            2.4 sec
+RMSE:                    6.04 m  
+Error < 1.0 m after:     13.0 sec
+
+
+--- Unscented particle filter ---
+
+Elapsed time:            4.1 sec
+RMSE:                    1.49 m  
+Error < 1.0 m after:     3.0 sec
+
+
+--- Particle filter with contractor ---
+
+Elapsed time:            3.0 sec
+RMSE:                    0.29 m  
+No. weights set to zero: 908 (4.5 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with contractor ---
+
+Elapsed time:            4.4 sec
+RMSE:                    0.23 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--- Particle filter with SIVIA ---
+
+Elapsed time:            17.9 sec
+RMSE:                    0.28 m  
+No. weights set to zero: 894 (4.5 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with SIVIA ---
+
+Elapsed time:            19.1 sec
+RMSE:                    0.24 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--------------------------------------------------------
+
+--- Run no. 13 -----------------------
+
+
+--- Particle filter ---
+
+Elapsed time:            2.4 sec
+RMSE:                    5.58 m  
+Error < 1.0 m after:     13.0 sec
+
+
+--- Unscented particle filter ---
+
+Elapsed time:            4.0 sec
+RMSE:                    9.64 m  
+Error < 1.0 m after:     4.0 sec
+
+
+--- Particle filter with contractor ---
+
+Elapsed time:            3.0 sec
+RMSE:                    0.28 m  
+No. weights set to zero: 923 (4.6 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with contractor ---
+
+Elapsed time:            4.4 sec
+RMSE:                    0.23 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--- Particle filter with SIVIA ---
+
+Elapsed time:            17.9 sec
+RMSE:                    0.29 m  
+No. weights set to zero: 889 (4.4 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with SIVIA ---
+
+Elapsed time:            19.1 sec
+RMSE:                    0.24 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--------------------------------------------------------
+
+--- Run no. 14 -----------------------
+
+
+--- Particle filter ---
+
+Elapsed time:            2.5 sec
+RMSE:                    7.19 m  
+Error < 1.0 m after:     22.0 sec
+
+
+--- Unscented particle filter ---
+
+Elapsed time:            4.0 sec
+RMSE:                    1.41 m  
+Error < 1.0 m after:     3.0 sec
+
+
+--- Particle filter with contractor ---
+
+Elapsed time:            3.0 sec
+RMSE:                    0.28 m  
+No. weights set to zero: 891 (4.5 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with contractor ---
+
+Elapsed time:            4.4 sec
+RMSE:                    0.24 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--- Particle filter with SIVIA ---
+
+Elapsed time:            17.8 sec
+RMSE:                    0.28 m  
+No. weights set to zero: 873 (4.4 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with SIVIA ---
+
+Elapsed time:            19.1 sec
+RMSE:                    0.24 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--------------------------------------------------------
+
+--- Run no. 15 -----------------------
+
+
+--- Particle filter ---
+
+Elapsed time:            2.5 sec
+RMSE:                    5.34 m  
+Error < 1.0 m after:     13.0 sec
+
+
+--- Unscented particle filter ---
+
+Elapsed time:            4.1 sec
+RMSE:                    1.96 m  
+Error < 1.0 m after:     3.0 sec
+
+
+--- Particle filter with contractor ---
+
+Elapsed time:            3.0 sec
+RMSE:                    0.27 m  
+No. weights set to zero: 972 (4.9 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with contractor ---
+
+Elapsed time:            4.5 sec
+RMSE:                    0.23 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--- Particle filter with SIVIA ---
+
+Elapsed time:            17.8 sec
+RMSE:                    0.27 m  
+No. weights set to zero: 830 (4.2 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with SIVIA ---
+
+Elapsed time:            18.9 sec
+RMSE:                    0.24 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--------------------------------------------------------
+
+--- Run no. 16 -----------------------
+
+
+--- Particle filter ---
+
+Elapsed time:            2.4 sec
+RMSE:                    15.25 m  
+Error < 1.0 m after:     21.0 sec
+
+
+--- Unscented particle filter ---
+
+Elapsed time:            4.1 sec
+RMSE:                    2.34 m  
+Error < 1.0 m after:     3.0 sec
+
+
+--- Particle filter with contractor ---
+
+Elapsed time:            3.0 sec
+RMSE:                    0.29 m  
+No. weights set to zero: 929 (4.6 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with contractor ---
+
+Elapsed time:            4.4 sec
+RMSE:                    0.23 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--- Particle filter with SIVIA ---
+
+Elapsed time:            17.9 sec
+RMSE:                    0.27 m  
+No. weights set to zero: 875 (4.4 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with SIVIA ---
+
+Elapsed time:            19.1 sec
+RMSE:                    0.24 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--------------------------------------------------------
+
+--- Run no. 17 -----------------------
+
+
+--- Particle filter ---
+
+Elapsed time:            2.5 sec
+RMSE:                    8.09 m  
+Error < 1.0 m after:     14.0 sec
+
+
+--- Unscented particle filter ---
+
+Elapsed time:            4.1 sec
+RMSE:                    15.12 m  
+Error < 1.0 m after:     3.0 sec
+
+
+--- Particle filter with contractor ---
+
+Elapsed time:            3.0 sec
+RMSE:                    0.27 m  
+No. weights set to zero: 929 (4.6 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with contractor ---
+
+Elapsed time:            4.5 sec
+RMSE:                    0.24 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--- Particle filter with SIVIA ---
+
+Elapsed time:            17.8 sec
+RMSE:                    0.28 m  
+No. weights set to zero: 825 (4.1 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with SIVIA ---
+
+Elapsed time:            19.1 sec
+RMSE:                    0.24 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--------------------------------------------------------
+
+--- Run no. 18 -----------------------
+
+
+--- Particle filter ---
+
+Elapsed time:            2.5 sec
+RMSE:                    8.48 m  
+Error < 1.0 m after:     15.0 sec
+
+
+--- Unscented particle filter ---
+
+Elapsed time:            4.1 sec
+RMSE:                    0.63 m  
+Error < 1.0 m after:     2.0 sec
+
+
+--- Particle filter with contractor ---
+
+Elapsed time:            3.0 sec
+RMSE:                    0.29 m  
+No. weights set to zero: 929 (4.6 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with contractor ---
+
+Elapsed time:            4.4 sec
+RMSE:                    0.24 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--- Particle filter with SIVIA ---
+
+Elapsed time:            17.8 sec
+RMSE:                    0.27 m  
+No. weights set to zero: 867 (4.3 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with SIVIA ---
+
+Elapsed time:            19.3 sec
+RMSE:                    0.23 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--------------------------------------------------------
+
+--- Run no. 19 -----------------------
+
+
+--- Particle filter ---
+
+Elapsed time:            2.3 sec
+RMSE:                    2.91 m  
+Error < 1.0 m after:     10.0 sec
+
+
+--- Unscented particle filter ---
+
+Elapsed time:            4.0 sec
+RMSE:                    0.82 m  
+Error < 1.0 m after:     3.0 sec
+
+
+--- Particle filter with contractor ---
+
+Elapsed time:            3.1 sec
+RMSE:                    0.27 m  
+No. weights set to zero: 899 (4.5 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with contractor ---
+
+Elapsed time:            4.4 sec
+RMSE:                    0.24 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--- Particle filter with SIVIA ---
+
+Elapsed time:            17.8 sec
+RMSE:                    0.27 m  
+No. weights set to zero: 841 (4.2 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with SIVIA ---
+
+Elapsed time:            19.2 sec
+RMSE:                    0.24 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--------------------------------------------------------
+
+--- Run no. 20 -----------------------
+
+
+--- Particle filter ---
+
+Elapsed time:            2.4 sec
+RMSE:                    6.95 m  
+Error < 1.0 m after:     16.0 sec
+
+
+--- Unscented particle filter ---
+
+Elapsed time:            4.0 sec
+RMSE:                    0.27 m  
+Error < 1.0 m after:     1.0 sec
+
+
+--- Particle filter with contractor ---
+
+Elapsed time:            2.9 sec
+RMSE:                    0.29 m  
+No. weights set to zero: 970 (4.8 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with contractor ---
+
+Elapsed time:            4.4 sec
+RMSE:                    0.23 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--- Particle filter with SIVIA ---
+
+Elapsed time:            17.8 sec
+RMSE:                    0.28 m  
+No. weights set to zero: 885 (4.4 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with SIVIA ---
+
+Elapsed time:            19.3 sec
+RMSE:                    0.24 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--------------------------------------------------------
+
+--- Run no. 21 -----------------------
+
+
+--- Particle filter ---
+
+Elapsed time:            2.4 sec
+RMSE:                    6.50 m  
+Error < 1.0 m after:     15.0 sec
+
+
+--- Unscented particle filter ---
+
+Elapsed time:            4.0 sec
+RMSE:                    1.73 m  
+Error < 1.0 m after:     3.0 sec
+
+
+--- Particle filter with contractor ---
+
+Elapsed time:            3.0 sec
+RMSE:                    0.29 m  
+No. weights set to zero: 931 (4.7 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with contractor ---
+
+Elapsed time:            4.4 sec
+RMSE:                    0.23 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--- Particle filter with SIVIA ---
+
+Elapsed time:            17.7 sec
+RMSE:                    0.26 m  
+No. weights set to zero: 870 (4.3 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with SIVIA ---
+
+Elapsed time:            19.1 sec
+RMSE:                    0.24 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--------------------------------------------------------
+
+--- Run no. 22 -----------------------
+
+
+--- Particle filter ---
+
+Elapsed time:            2.5 sec
+RMSE:                    3.11 m  
+Error < 1.0 m after:     17.0 sec
+
+
+--- Unscented particle filter ---
+
+Elapsed time:            4.1 sec
+RMSE:                    2.79 m  
+Error < 1.0 m after:     3.0 sec
+
+
+--- Particle filter with contractor ---
+
+Elapsed time:            3.0 sec
+RMSE:                    0.29 m  
+No. weights set to zero: 891 (4.5 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with contractor ---
+
+Elapsed time:            4.4 sec
+RMSE:                    0.24 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--- Particle filter with SIVIA ---
+
+Elapsed time:            18.0 sec
+RMSE:                    0.27 m  
+No. weights set to zero: 894 (4.5 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with SIVIA ---
+
+Elapsed time:            19.1 sec
+RMSE:                    0.24 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--------------------------------------------------------
+
+--- Run no. 23 -----------------------
+
+
+--- Particle filter ---
+
+Elapsed time:            2.4 sec
+RMSE:                    18.41 m  
+Error < 1.0 m after:     25.0 sec
+
+
+--- Unscented particle filter ---
+
+Elapsed time:            4.0 sec
+RMSE:                    0.32 m  
+Error < 1.0 m after:     2.0 sec
+
+
+--- Particle filter with contractor ---
+
+Elapsed time:            3.0 sec
+RMSE:                    0.28 m  
+No. weights set to zero: 916 (4.6 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with contractor ---
+
+Elapsed time:            4.5 sec
+RMSE:                    0.23 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--- Particle filter with SIVIA ---
+
+Elapsed time:            17.9 sec
+RMSE:                    0.28 m  
+No. weights set to zero: 856 (4.3 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with SIVIA ---
+
+Elapsed time:            19.1 sec
+RMSE:                    0.23 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--------------------------------------------------------
+
+--- Run no. 24 -----------------------
+
+
+--- Particle filter ---
+
+Elapsed time:            2.4 sec
+RMSE:                    11.11 m  
+Error < 1.0 m after:     22.0 sec
+
+
+--- Unscented particle filter ---
+
+Elapsed time:            4.1 sec
+RMSE:                    1.14 m  
+Error < 1.0 m after:     3.0 sec
+
+
+--- Particle filter with contractor ---
+
+Elapsed time:            3.0 sec
+RMSE:                    0.29 m  
+No. weights set to zero: 875 (4.4 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with contractor ---
+
+Elapsed time:            4.5 sec
+RMSE:                    0.23 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--- Particle filter with SIVIA ---
+
+Elapsed time:            17.8 sec
+RMSE:                    0.26 m  
+No. weights set to zero: 888 (4.4 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with SIVIA ---
+
+Elapsed time:            19.5 sec
+RMSE:                    0.24 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--------------------------------------------------------
+
+--- Run no. 25 -----------------------
+
+
+--- Particle filter ---
+
+Elapsed time:            2.4 sec
+RMSE:                    8.57 m  
+Error < 1.0 m after:     14.0 sec
+
+
+--- Unscented particle filter ---
+
+Elapsed time:            4.2 sec
+RMSE:                    1.78 m  
+Error < 1.0 m after:     3.0 sec
+
+
+--- Particle filter with contractor ---
+
+Elapsed time:            3.0 sec
+RMSE:                    0.27 m  
+No. weights set to zero: 971 (4.9 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with contractor ---
+
+Elapsed time:            4.5 sec
+RMSE:                    0.24 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--- Particle filter with SIVIA ---
+
+Elapsed time:            18.9 sec
+RMSE:                    0.26 m  
+No. weights set to zero: 917 (4.6 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with SIVIA ---
+
+Elapsed time:            19.8 sec
+RMSE:                    0.24 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--------------------------------------------------------
+
+--- Run no. 26 -----------------------
+
+
+--- Particle filter ---
+
+Elapsed time:            2.5 sec
+RMSE:                    10.38 m  
+Error < 1.0 m after:     18.0 sec
+
+
+--- Unscented particle filter ---
+
+Elapsed time:            4.2 sec
+RMSE:                    2.79 m  
+Error < 1.0 m after:     4.0 sec
+
+
+--- Particle filter with contractor ---
+
+Elapsed time:            3.0 sec
+RMSE:                    0.28 m  
+No. weights set to zero: 889 (4.4 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with contractor ---
+
+Elapsed time:            4.6 sec
+RMSE:                    0.24 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--- Particle filter with SIVIA ---
+
+Elapsed time:            19.5 sec
+RMSE:                    0.30 m  
+No. weights set to zero: 858 (4.3 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with SIVIA ---
+
+Elapsed time:            20.1 sec
+RMSE:                    0.24 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--------------------------------------------------------
+
+--- Run no. 27 -----------------------
+
+
+--- Particle filter ---
+
+Elapsed time:            2.4 sec
+RMSE:                    2.69 m  
+Error < 1.0 m after:     14.0 sec
+
+
+--- Unscented particle filter ---
+
+Elapsed time:            4.1 sec
+RMSE:                    3.17 m  
+Error < 1.0 m after:     3.0 sec
+
+
+--- Particle filter with contractor ---
+
+Elapsed time:            3.1 sec
+RMSE:                    0.29 m  
+No. weights set to zero: 934 (4.7 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with contractor ---
+
+Elapsed time:            4.6 sec
+RMSE:                    0.23 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--- Particle filter with SIVIA ---
+
+Elapsed time:            20.0 sec
+RMSE:                    0.28 m  
+No. weights set to zero: 856 (4.3 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with SIVIA ---
+
+Elapsed time:            20.6 sec
+RMSE:                    0.24 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--------------------------------------------------------
+
+--- Run no. 28 -----------------------
+
+
+--- Particle filter ---
+
+Elapsed time:            2.5 sec
+RMSE:                    1.79 m  
+Error < 1.0 m after:     8.0 sec
+
+
+--- Unscented particle filter ---
+
+Elapsed time:            4.1 sec
+RMSE:                    5.99 m  
+Error < 1.0 m after:     4.0 sec
+
+
+--- Particle filter with contractor ---
+
+Elapsed time:            3.0 sec
+RMSE:                    0.31 m  
+No. weights set to zero: 949 (4.7 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with contractor ---
+
+Elapsed time:            4.6 sec
+RMSE:                    0.23 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--- Particle filter with SIVIA ---
+
+Elapsed time:            20.0 sec
+RMSE:                    0.28 m  
+No. weights set to zero: 866 (4.3 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with SIVIA ---
+
+Elapsed time:            20.4 sec
+RMSE:                    0.23 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--------------------------------------------------------
+
+--- Run no. 29 -----------------------
+
+
+--- Particle filter ---
+
+Elapsed time:            2.5 sec
+RMSE:                    1.84 m  
+Error < 1.0 m after:     9.0 sec
+
+
+--- Unscented particle filter ---
+
+Elapsed time:            4.3 sec
+RMSE:                    2.68 m  
+Error < 1.0 m after:     3.0 sec
+
+
+--- Particle filter with contractor ---
+
+Elapsed time:            3.2 sec
+RMSE:                    0.30 m  
+No. weights set to zero: 901 (4.5 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with contractor ---
+
+Elapsed time:            4.7 sec
+RMSE:                    0.24 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--- Particle filter with SIVIA ---
+
+Elapsed time:            20.7 sec
+RMSE:                    0.27 m  
+No. weights set to zero: 840 (4.2 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with SIVIA ---
+
+Elapsed time:            22.1 sec
+RMSE:                    0.23 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--------------------------------------------------------
+
+--- Run no. 30 -----------------------
+
+
+--- Particle filter ---
+
+Elapsed time:            2.4 sec
+RMSE:                    4.48 m  
+Error < 1.0 m after:     13.0 sec
+
+
+--- Unscented particle filter ---
+
+Elapsed time:            4.1 sec
+RMSE:                    2.79 m  
+Error < 1.0 m after:     3.0 sec
+
+
+--- Particle filter with contractor ---
+
+Elapsed time:            3.0 sec
+RMSE:                    0.28 m  
+No. weights set to zero: 927 (4.6 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with contractor ---
+
+Elapsed time:            4.6 sec
+RMSE:                    0.23 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--- Particle filter with SIVIA ---
+
+Elapsed time:            20.1 sec
+RMSE:                    0.27 m  
+No. weights set to zero: 868 (4.3 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with SIVIA ---
+
+Elapsed time:            20.3 sec
+RMSE:                    0.23 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--------------------------------------------------------
+
+--- Run no. 31 -----------------------
+
+
+--- Particle filter ---
+
+Elapsed time:            2.4 sec
+RMSE:                    13.47 m  
+Error < 1.0 m after:     25.0 sec
+
+
+--- Unscented particle filter ---
+
+Elapsed time:            4.1 sec
+RMSE:                    0.78 m  
+Error < 1.0 m after:     3.0 sec
+
+
+--- Particle filter with contractor ---
+
+Elapsed time:            3.0 sec
+RMSE:                    0.28 m  
+No. weights set to zero: 941 (4.7 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with contractor ---
+
+Elapsed time:            4.6 sec
+RMSE:                    0.23 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--- Particle filter with SIVIA ---
+
+Elapsed time:            20.6 sec
+RMSE:                    0.27 m  
+No. weights set to zero: 846 (4.2 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with SIVIA ---
+
+Elapsed time:            20.6 sec
+RMSE:                    0.24 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--------------------------------------------------------
+
+--- Run no. 32 -----------------------
+
+
+--- Particle filter ---
+
+Elapsed time:            2.4 sec
+RMSE:                    8.35 m  
+Error < 1.0 m after:     21.0 sec
+
+
+--- Unscented particle filter ---
+
+Elapsed time:            4.2 sec
+RMSE:                    1.39 m  
+Error < 1.0 m after:     3.0 sec
+
+
+--- Particle filter with contractor ---
+
+Elapsed time:            3.0 sec
+RMSE:                    0.27 m  
+No. weights set to zero: 872 (4.4 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with contractor ---
+
+Elapsed time:            4.6 sec
+RMSE:                    0.24 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--- Particle filter with SIVIA ---
+
+Elapsed time:            20.6 sec
+RMSE:                    0.28 m  
+No. weights set to zero: 873 (4.4 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with SIVIA ---
+
+Elapsed time:            21.2 sec
+RMSE:                    0.24 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--------------------------------------------------------
+
+--- Run no. 33 -----------------------
+
+
+--- Particle filter ---
+
+Elapsed time:            2.9 sec
+RMSE:                    9.87 m  
+Error < 1.0 m after:     22.0 sec
+
+
+--- Unscented particle filter ---
+
+Elapsed time:            4.7 sec
+RMSE:                    2.07 m  
+Error < 1.0 m after:     3.0 sec
+
+
+--- Particle filter with contractor ---
+
+Elapsed time:            3.3 sec
+RMSE:                    0.29 m  
+No. weights set to zero: 948 (4.7 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with contractor ---
+
+Elapsed time:            4.9 sec
+RMSE:                    0.24 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--- Particle filter with SIVIA ---
+
+Elapsed time:            21.4 sec
+RMSE:                    0.28 m  
+No. weights set to zero: 824 (4.1 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with SIVIA ---
+
+Elapsed time:            22.4 sec
+RMSE:                    0.23 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--------------------------------------------------------
+
+--- Run no. 34 -----------------------
+
+
+--- Particle filter ---
+
+Elapsed time:            2.5 sec
+RMSE:                    6.44 m  
+Error < 1.0 m after:     14.0 sec
+
+
+--- Unscented particle filter ---
+
+Elapsed time:            4.1 sec
+RMSE:                    1.63 m  
+Error < 1.0 m after:     3.0 sec
+
+
+--- Particle filter with contractor ---
+
+Elapsed time:            3.0 sec
+RMSE:                    0.28 m  
+No. weights set to zero: 902 (4.5 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with contractor ---
+
+Elapsed time:            4.6 sec
+RMSE:                    0.24 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--- Particle filter with SIVIA ---
+
+Elapsed time:            20.0 sec
+RMSE:                    0.27 m  
+No. weights set to zero: 819 (4.1 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with SIVIA ---
+
+Elapsed time:            20.3 sec
+RMSE:                    0.24 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--------------------------------------------------------
+
+--- Run no. 35 -----------------------
+
+
+--- Particle filter ---
+
+Elapsed time:            2.3 sec
+RMSE:                    8.47 m  
+Error < 1.0 m after:     14.0 sec
+
+
+--- Unscented particle filter ---
+
+Elapsed time:            4.1 sec
+RMSE:                    1.38 m  
+Error < 1.0 m after:     3.0 sec
+
+
+--- Particle filter with contractor ---
+
+Elapsed time:            2.9 sec
+RMSE:                    0.28 m  
+No. weights set to zero: 897 (4.5 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with contractor ---
+
+Elapsed time:            4.6 sec
+RMSE:                    0.23 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--- Particle filter with SIVIA ---
+
+Elapsed time:            19.4 sec
+RMSE:                    0.29 m  
+No. weights set to zero: 870 (4.3 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with SIVIA ---
+
+Elapsed time:            20.0 sec
+RMSE:                    0.24 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--------------------------------------------------------
+
+--- Run no. 36 -----------------------
+
+
+--- Particle filter ---
+
+Elapsed time:            2.4 sec
+RMSE:                    15.50 m  
+Error < 1.0 m after:     20.0 sec
+
+
+--- Unscented particle filter ---
+
+Elapsed time:            4.1 sec
+RMSE:                    0.48 m  
+Error < 1.0 m after:     2.0 sec
+
+
+--- Particle filter with contractor ---
+
+Elapsed time:            3.0 sec
+RMSE:                    0.29 m  
+No. weights set to zero: 897 (4.5 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with contractor ---
+
+Elapsed time:            4.5 sec
+RMSE:                    0.24 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--- Particle filter with SIVIA ---
+
+Elapsed time:            19.3 sec
+RMSE:                    0.28 m  
+No. weights set to zero: 903 (4.5 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with SIVIA ---
+
+Elapsed time:            20.0 sec
+RMSE:                    0.23 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--------------------------------------------------------
+
+--- Run no. 37 -----------------------
+
+
+--- Particle filter ---
+
+Elapsed time:            2.4 sec
+RMSE:                    8.48 m  
+Error < 1.0 m after:     18.0 sec
+
+
+--- Unscented particle filter ---
+
+Elapsed time:            4.2 sec
+RMSE:                    1.76 m  
+Error < 1.0 m after:     3.0 sec
+
+
+--- Particle filter with contractor ---
+
+Elapsed time:            3.1 sec
+RMSE:                    0.28 m  
+No. weights set to zero: 941 (4.7 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with contractor ---
+
+Elapsed time:            4.7 sec
+RMSE:                    0.23 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--- Particle filter with SIVIA ---
+
+Elapsed time:            19.6 sec
+RMSE:                    0.28 m  
+No. weights set to zero: 874 (4.4 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with SIVIA ---
+
+Elapsed time:            20.0 sec
+RMSE:                    0.24 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--------------------------------------------------------
+
+--- Run no. 38 -----------------------
+
+
+--- Particle filter ---
+
+Elapsed time:            2.5 sec
+RMSE:                    8.49 m  
+Error < 1.0 m after:     15.0 sec
+
+
+--- Unscented particle filter ---
+
+Elapsed time:            4.1 sec
+RMSE:                    1.10 m  
+Error < 1.0 m after:     3.0 sec
+
+
+--- Particle filter with contractor ---
+
+Elapsed time:            3.0 sec
+RMSE:                    0.29 m  
+No. weights set to zero: 941 (4.7 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with contractor ---
+
+Elapsed time:            4.6 sec
+RMSE:                    0.24 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--- Particle filter with SIVIA ---
+
+Elapsed time:            19.3 sec
+RMSE:                    0.29 m  
+No. weights set to zero: 863 (4.3 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with SIVIA ---
+
+Elapsed time:            20.0 sec
+RMSE:                    0.24 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--------------------------------------------------------
+
+--- Run no. 39 -----------------------
+
+
+--- Particle filter ---
+
+Elapsed time:            2.4 sec
+RMSE:                    5.64 m  
+Error < 1.0 m after:     21.0 sec
+
+
+--- Unscented particle filter ---
+
+Elapsed time:            4.2 sec
+RMSE:                    3.13 m  
+Error < 1.0 m after:     3.0 sec
+
+
+--- Particle filter with contractor ---
+
+Elapsed time:            3.0 sec
+RMSE:                    0.29 m  
+No. weights set to zero: 917 (4.6 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with contractor ---
+
+Elapsed time:            4.5 sec
+RMSE:                    0.23 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--- Particle filter with SIVIA ---
+
+Elapsed time:            19.3 sec
+RMSE:                    0.29 m  
+No. weights set to zero: 858 (4.3 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with SIVIA ---
+
+Elapsed time:            19.8 sec
+RMSE:                    0.24 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--------------------------------------------------------
+
+--- Run no. 40 -----------------------
+
+
+--- Particle filter ---
+
+Elapsed time:            2.5 sec
+RMSE:                    11.11 m  
+Error < 1.0 m after:     21.0 sec
+
+
+--- Unscented particle filter ---
+
+Elapsed time:            4.2 sec
+RMSE:                    1.36 m  
+Error < 1.0 m after:     3.0 sec
+
+
+--- Particle filter with contractor ---
+
+Elapsed time:            3.0 sec
+RMSE:                    0.28 m  
+No. weights set to zero: 922 (4.6 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with contractor ---
+
+Elapsed time:            4.5 sec
+RMSE:                    0.24 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--- Particle filter with SIVIA ---
+
+Elapsed time:            19.2 sec
+RMSE:                    0.27 m  
+No. weights set to zero: 878 (4.4 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with SIVIA ---
+
+Elapsed time:            19.8 sec
+RMSE:                    0.24 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--------------------------------------------------------
+
+--- Run no. 41 -----------------------
+
+
+--- Particle filter ---
+
+Elapsed time:            2.5 sec
+RMSE:                    2.20 m  
+Error < 1.0 m after:     11.0 sec
+
+
+--- Unscented particle filter ---
+
+Elapsed time:            3.9 sec
+RMSE:                    1.10 m  
+Error < 1.0 m after:     3.0 sec
+
+
+--- Particle filter with contractor ---
+
+Elapsed time:            3.1 sec
+RMSE:                    0.28 m  
+No. weights set to zero: 959 (4.8 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with contractor ---
+
+Elapsed time:            4.6 sec
+RMSE:                    0.24 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--- Particle filter with SIVIA ---
+
+Elapsed time:            19.4 sec
+RMSE:                    0.28 m  
+No. weights set to zero: 844 (4.2 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with SIVIA ---
+
+Elapsed time:            19.8 sec
+RMSE:                    0.23 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--------------------------------------------------------
+
+--- Run no. 42 -----------------------
+
+
+--- Particle filter ---
+
+Elapsed time:            2.4 sec
+RMSE:                    7.54 m  
+Error < 1.0 m after:     13.0 sec
+
+
+--- Unscented particle filter ---
+
+Elapsed time:            4.0 sec
+RMSE:                    1.48 m  
+Error < 1.0 m after:     3.0 sec
+
+
+--- Particle filter with contractor ---
+
+Elapsed time:            3.0 sec
+RMSE:                    0.27 m  
+No. weights set to zero: 931 (4.7 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with contractor ---
+
+Elapsed time:            4.6 sec
+RMSE:                    0.24 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--- Particle filter with SIVIA ---
+
+Elapsed time:            19.4 sec
+RMSE:                    0.27 m  
+No. weights set to zero: 828 (4.1 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with SIVIA ---
+
+Elapsed time:            19.8 sec
+RMSE:                    0.24 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--------------------------------------------------------
+
+--- Run no. 43 -----------------------
+
+
+--- Particle filter ---
+
+Elapsed time:            2.5 sec
+RMSE:                    6.24 m  
+Error < 1.0 m after:     13.0 sec
+
+
+--- Unscented particle filter ---
+
+Elapsed time:            4.2 sec
+RMSE:                    1.76 m  
+Error < 1.0 m after:     3.0 sec
+
+
+--- Particle filter with contractor ---
+
+Elapsed time:            3.0 sec
+RMSE:                    0.28 m  
+No. weights set to zero: 921 (4.6 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with contractor ---
+
+Elapsed time:            4.5 sec
+RMSE:                    0.24 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--- Particle filter with SIVIA ---
+
+Elapsed time:            19.2 sec
+RMSE:                    0.27 m  
+No. weights set to zero: 848 (4.2 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with SIVIA ---
+
+Elapsed time:            19.9 sec
+RMSE:                    0.24 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--------------------------------------------------------
+
+--- Run no. 44 -----------------------
+
+
+--- Particle filter ---
+
+Elapsed time:            2.4 sec
+RMSE:                    9.72 m  
+Error < 1.0 m after:     22.0 sec
+
+
+--- Unscented particle filter ---
+
+Elapsed time:            4.1 sec
+RMSE:                    1.88 m  
+Error < 1.0 m after:     3.0 sec
+
+
+--- Particle filter with contractor ---
+
+Elapsed time:            3.1 sec
+RMSE:                    0.27 m  
+No. weights set to zero: 895 (4.5 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with contractor ---
+
+Elapsed time:            4.6 sec
+RMSE:                    0.24 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--- Particle filter with SIVIA ---
+
+Elapsed time:            19.1 sec
+RMSE:                    0.28 m  
+No. weights set to zero: 834 (4.2 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with SIVIA ---
+
+Elapsed time:            20.2 sec
+RMSE:                    0.23 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--------------------------------------------------------
+
+--- Run no. 45 -----------------------
+
+
+--- Particle filter ---
+
+Elapsed time:            2.4 sec
+RMSE:                    8.12 m  
+Error < 1.0 m after:     18.0 sec
+
+
+--- Unscented particle filter ---
+
+Elapsed time:            4.1 sec
+RMSE:                    0.94 m  
+Error < 1.0 m after:     2.0 sec
+
+
+--- Particle filter with contractor ---
+
+Elapsed time:            3.1 sec
+RMSE:                    0.27 m  
+No. weights set to zero: 889 (4.4 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with contractor ---
+
+Elapsed time:            4.6 sec
+RMSE:                    0.23 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--- Particle filter with SIVIA ---
+
+Elapsed time:            19.2 sec
+RMSE:                    0.27 m  
+No. weights set to zero: 874 (4.4 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with SIVIA ---
+
+Elapsed time:            20.1 sec
+RMSE:                    0.23 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--------------------------------------------------------
+
+--- Run no. 46 -----------------------
+
+
+--- Particle filter ---
+
+Elapsed time:            2.5 sec
+RMSE:                    12.63 m  
+Error < 1.0 m after:     17.0 sec
+
+
+--- Unscented particle filter ---
+
+Elapsed time:            3.9 sec
+RMSE:                    2.48 m  
+Error < 1.0 m after:     3.0 sec
+
+
+--- Particle filter with contractor ---
+
+Elapsed time:            3.1 sec
+RMSE:                    0.29 m  
+No. weights set to zero: 941 (4.7 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with contractor ---
+
+Elapsed time:            4.6 sec
+RMSE:                    0.24 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--- Particle filter with SIVIA ---
+
+Elapsed time:            19.6 sec
+RMSE:                    0.27 m  
+No. weights set to zero: 895 (4.5 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with SIVIA ---
+
+Elapsed time:            19.8 sec
+RMSE:                    0.24 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--------------------------------------------------------
+
+--- Run no. 47 -----------------------
+
+
+--- Particle filter ---
+
+Elapsed time:            2.5 sec
+RMSE:                    7.99 m  
+Error < 1.0 m after:     19.0 sec
+
+
+--- Unscented particle filter ---
+
+Elapsed time:            4.2 sec
+RMSE:                    5.39 m  
+Error < 1.0 m after:     4.0 sec
+
+
+--- Particle filter with contractor ---
+
+Elapsed time:            3.0 sec
+RMSE:                    0.28 m  
+No. weights set to zero: 955 (4.8 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with contractor ---
+
+Elapsed time:            4.6 sec
+RMSE:                    0.24 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--- Particle filter with SIVIA ---
+
+Elapsed time:            19.4 sec
+RMSE:                    0.27 m  
+No. weights set to zero: 864 (4.3 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with SIVIA ---
+
+Elapsed time:            19.9 sec
+RMSE:                    0.24 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--------------------------------------------------------
+
+--- Run no. 48 -----------------------
+
+
+--- Particle filter ---
+
+Elapsed time:            2.4 sec
+RMSE:                    7.35 m  
+Error < 1.0 m after:     18.0 sec
+
+
+--- Unscented particle filter ---
+
+Elapsed time:            4.1 sec
+RMSE:                    0.35 m  
+Error < 1.0 m after:     2.0 sec
+
+
+--- Particle filter with contractor ---
+
+Elapsed time:            3.1 sec
+RMSE:                    0.28 m  
+No. weights set to zero: 954 (4.8 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with contractor ---
+
+Elapsed time:            4.5 sec
+RMSE:                    0.24 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--- Particle filter with SIVIA ---
+
+Elapsed time:            19.2 sec
+RMSE:                    0.28 m  
+No. weights set to zero: 837 (4.2 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with SIVIA ---
+
+Elapsed time:            19.8 sec
+RMSE:                    0.24 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--------------------------------------------------------
+
+--- Run no. 49 -----------------------
+
+
+--- Particle filter ---
+
+Elapsed time:            2.5 sec
+RMSE:                    3.37 m  
+Error < 1.0 m after:     11.0 sec
+
+
+--- Unscented particle filter ---
+
+Elapsed time:            4.2 sec
+RMSE:                    2.94 m  
+Error < 1.0 m after:     3.0 sec
+
+
+--- Particle filter with contractor ---
+
+Elapsed time:            3.1 sec
+RMSE:                    0.30 m  
+No. weights set to zero: 889 (4.4 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with contractor ---
+
+Elapsed time:            4.5 sec
+RMSE:                    0.23 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--- Particle filter with SIVIA ---
+
+Elapsed time:            19.0 sec
+RMSE:                    0.29 m  
+No. weights set to zero: 901 (4.5 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with SIVIA ---
+
+Elapsed time:            19.7 sec
+RMSE:                    0.24 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--------------------------------------------------------
+
+--- Run no. 50 -----------------------
+
+
+--- Particle filter ---
+
+Elapsed time:            2.5 sec
+RMSE:                    10.54 m  
+Error < 1.0 m after:     14.0 sec
+
+
+--- Unscented particle filter ---
+
+Elapsed time:            4.0 sec
+RMSE:                    0.50 m  
+Error < 1.0 m after:     2.0 sec
+
+
+--- Particle filter with contractor ---
+
+Elapsed time:            3.1 sec
+RMSE:                    0.28 m  
+No. weights set to zero: 933 (4.7 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with contractor ---
+
+Elapsed time:            4.6 sec
+RMSE:                    0.23 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--- Particle filter with SIVIA ---
+
+Elapsed time:            19.5 sec
+RMSE:                    0.28 m  
+No. weights set to zero: 870 (4.3 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with SIVIA ---
+
+Elapsed time:            19.8 sec
+RMSE:                    0.24 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--------------------------------------------------------
+
+--- Run no. 51 -----------------------
+
+
+--- Particle filter ---
+
+Elapsed time:            2.3 sec
+RMSE:                    13.01 m  
+Error < 1.0 m after:     21.0 sec
+
+
+--- Unscented particle filter ---
+
+Elapsed time:            4.2 sec
+RMSE:                    2.25 m  
+Error < 1.0 m after:     3.0 sec
+
+
+--- Particle filter with contractor ---
+
+Elapsed time:            3.0 sec
+RMSE:                    0.28 m  
+No. weights set to zero: 879 (4.4 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with contractor ---
+
+Elapsed time:            4.5 sec
+RMSE:                    0.24 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--- Particle filter with SIVIA ---
+
+Elapsed time:            18.8 sec
+RMSE:                    0.27 m  
+No. weights set to zero: 833 (4.2 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with SIVIA ---
+
+Elapsed time:            19.7 sec
+RMSE:                    0.24 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--------------------------------------------------------
+
+--- Run no. 52 -----------------------
+
+
+--- Particle filter ---
+
+Elapsed time:            2.4 sec
+RMSE:                    5.27 m  
+Error < 1.0 m after:     16.0 sec
+
+
+--- Unscented particle filter ---
+
+Elapsed time:            4.1 sec
+RMSE:                    2.98 m  
+Error < 1.0 m after:     3.0 sec
+
+
+--- Particle filter with contractor ---
+
+Elapsed time:            3.0 sec
+RMSE:                    0.29 m  
+No. weights set to zero: 915 (4.6 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with contractor ---
+
+Elapsed time:            4.4 sec
+RMSE:                    0.24 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--- Particle filter with SIVIA ---
+
+Elapsed time:            18.8 sec
+RMSE:                    0.28 m  
+No. weights set to zero: 869 (4.3 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with SIVIA ---
+
+Elapsed time:            19.8 sec
+RMSE:                    0.24 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--------------------------------------------------------
+
+--- Run no. 53 -----------------------
+
+
+--- Particle filter ---
+
+Elapsed time:            2.5 sec
+RMSE:                    7.66 m  
+Error < 1.0 m after:     15.0 sec
+
+
+--- Unscented particle filter ---
+
+Elapsed time:            4.1 sec
+RMSE:                    0.27 m  
+Error < 1.0 m after:     1.0 sec
+
+
+--- Particle filter with contractor ---
+
+Elapsed time:            3.0 sec
+RMSE:                    0.29 m  
+No. weights set to zero: 941 (4.7 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with contractor ---
+
+Elapsed time:            4.5 sec
+RMSE:                    0.24 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--- Particle filter with SIVIA ---
+
+Elapsed time:            18.5 sec
+RMSE:                    0.28 m  
+No. weights set to zero: 855 (4.3 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with SIVIA ---
+
+Elapsed time:            19.9 sec
+RMSE:                    0.24 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--------------------------------------------------------
+
+--- Run no. 54 -----------------------
+
+
+--- Particle filter ---
+
+Elapsed time:            2.5 sec
+RMSE:                    8.24 m  
+Error < 1.0 m after:     20.0 sec
+
+
+--- Unscented particle filter ---
+
+Elapsed time:            4.2 sec
+RMSE:                    0.28 m  
+Error < 1.0 m after:     2.0 sec
+
+
+--- Particle filter with contractor ---
+
+Elapsed time:            3.1 sec
+RMSE:                    0.29 m  
+No. weights set to zero: 876 (4.4 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with contractor ---
+
+Elapsed time:            5.6 sec
+RMSE:                    0.24 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--- Particle filter with SIVIA ---
+
+Elapsed time:            23.0 sec
+RMSE:                    0.29 m  
+No. weights set to zero: 830 (4.2 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with SIVIA ---
+
+Elapsed time:            26.1 sec
+RMSE:                    0.24 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--------------------------------------------------------
+
+--- Run no. 55 -----------------------
+
+
+--- Particle filter ---
+
+Elapsed time:            2.5 sec
+RMSE:                    17.82 m  
+Error < 1.0 m after:     27.0 sec
+
+
+--- Unscented particle filter ---
+
+Elapsed time:            4.5 sec
+RMSE:                    2.61 m  
+Error < 1.0 m after:     3.0 sec
+
+
+--- Particle filter with contractor ---
+
+Elapsed time:            3.1 sec
+RMSE:                    0.27 m  
+No. weights set to zero: 927 (4.6 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with contractor ---
+
+Elapsed time:            5.9 sec
+RMSE:                    0.24 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--- Particle filter with SIVIA ---
+
+Elapsed time:            22.4 sec
+RMSE:                    0.27 m  
+No. weights set to zero: 865 (4.3 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with SIVIA ---
+
+Elapsed time:            23.2 sec
+RMSE:                    0.23 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--------------------------------------------------------
+
+--- Run no. 56 -----------------------
+
+
+--- Particle filter ---
+
+Elapsed time:            3.0 sec
+RMSE:                    8.34 m  
+Error < 1.0 m after:     14.0 sec
+
+
+--- Unscented particle filter ---
+
+Elapsed time:            4.7 sec
+RMSE:                    0.29 m  
+Error < 1.0 m after:     2.0 sec
+
+
+--- Particle filter with contractor ---
+
+Elapsed time:            3.4 sec
+RMSE:                    0.29 m  
+No. weights set to zero: 931 (4.7 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with contractor ---
+
+Elapsed time:            5.8 sec
+RMSE:                    0.24 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--- Particle filter with SIVIA ---
+
+Elapsed time:            21.6 sec
+RMSE:                    0.28 m  
+No. weights set to zero: 833 (4.2 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with SIVIA ---
+
+Elapsed time:            23.7 sec
+RMSE:                    0.24 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--------------------------------------------------------
+
+--- Run no. 57 -----------------------
+
+
+--- Particle filter ---
+
+Elapsed time:            2.6 sec
+RMSE:                    6.97 m  
+Error < 1.0 m after:     19.0 sec
+
+
+--- Unscented particle filter ---
+
+Elapsed time:            4.2 sec
+RMSE:                    0.38 m  
+Error < 1.0 m after:     2.0 sec
+
+
+--- Particle filter with contractor ---
+
+Elapsed time:            3.4 sec
+RMSE:                    0.29 m  
+No. weights set to zero: 917 (4.6 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with contractor ---
+
+Elapsed time:            6.2 sec
+RMSE:                    0.23 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--- Particle filter with SIVIA ---
+
+Elapsed time:            21.7 sec
+RMSE:                    0.28 m  
+No. weights set to zero: 871 (4.4 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with SIVIA ---
+
+Elapsed time:            25.9 sec
+RMSE:                    0.24 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--------------------------------------------------------
+
+--- Run no. 58 -----------------------
+
+
+--- Particle filter ---
+
+Elapsed time:            3.4 sec
+RMSE:                    7.38 m  
+Error < 1.0 m after:     14.0 sec
+
+
+--- Unscented particle filter ---
+
+Elapsed time:            4.3 sec
+RMSE:                    1.84 m  
+Error < 1.0 m after:     3.0 sec
+
+
+--- Particle filter with contractor ---
+
+Elapsed time:            3.5 sec
+RMSE:                    0.28 m  
+No. weights set to zero: 887 (4.4 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with contractor ---
+
+Elapsed time:            5.2 sec
+RMSE:                    0.24 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--- Particle filter with SIVIA ---
+
+Elapsed time:            20.4 sec
+RMSE:                    0.28 m  
+No. weights set to zero: 854 (4.3 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with SIVIA ---
+
+Elapsed time:            29.8 sec
+RMSE:                    0.23 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--------------------------------------------------------
+
+--- Run no. 59 -----------------------
+
+
+--- Particle filter ---
+
+Elapsed time:            5.5 sec
+RMSE:                    6.62 m  
+Error < 1.0 m after:     17.0 sec
+
+
+--- Unscented particle filter ---
+
+Elapsed time:            6.2 sec
+RMSE:                    1.27 m  
+Error < 1.0 m after:     3.0 sec
+
+
+--- Particle filter with contractor ---
+
+Elapsed time:            4.1 sec
+RMSE:                    0.28 m  
+No. weights set to zero: 970 (4.8 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with contractor ---
+
+Elapsed time:            6.0 sec
+RMSE:                    0.24 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--- Particle filter with SIVIA ---
+
+Elapsed time:            21.9 sec
+RMSE:                    0.28 m  
+No. weights set to zero: 914 (4.6 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with SIVIA ---
+
+Elapsed time:            19.5 sec
+RMSE:                    0.23 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--------------------------------------------------------
+
+--- Run no. 60 -----------------------
+
+
+--- Particle filter ---
+
+Elapsed time:            3.6 sec
+RMSE:                    7.29 m  
+Error < 1.0 m after:     14.0 sec
+
+
+--- Unscented particle filter ---
+
+Elapsed time:            5.2 sec
+RMSE:                    1.66 m  
+Error < 1.0 m after:     3.0 sec
+
+
+--- Particle filter with contractor ---
+
+Elapsed time:            5.4 sec
+RMSE:                    0.28 m  
+No. weights set to zero: 940 (4.7 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with contractor ---
+
+Elapsed time:            5.5 sec
+RMSE:                    0.24 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--- Particle filter with SIVIA ---
+
+Elapsed time:            21.8 sec
+RMSE:                    0.28 m  
+No. weights set to zero: 866 (4.3 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with SIVIA ---
+
+Elapsed time:            19.3 sec
+RMSE:                    0.24 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--------------------------------------------------------
+
+--- Run no. 61 -----------------------
+
+
+--- Particle filter ---
+
+Elapsed time:            2.6 sec
+RMSE:                    5.64 m  
+Error < 1.0 m after:     27.0 sec
+
+
+--- Unscented particle filter ---
+
+Elapsed time:            5.0 sec
+RMSE:                    3.29 m  
+Error < 1.0 m after:     3.0 sec
+
+
+--- Particle filter with contractor ---
+
+Elapsed time:            3.2 sec
+RMSE:                    0.28 m  
+No. weights set to zero: 928 (4.6 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with contractor ---
+
+Elapsed time:            4.5 sec
+RMSE:                    0.24 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--- Particle filter with SIVIA ---
+
+Elapsed time:            17.7 sec
+RMSE:                    0.28 m  
+No. weights set to zero: 840 (4.2 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with SIVIA ---
+
+Elapsed time:            19.8 sec
+RMSE:                    0.24 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--------------------------------------------------------
+
+--- Run no. 62 -----------------------
+
+
+--- Particle filter ---
+
+Elapsed time:            2.5 sec
+RMSE:                    10.58 m  
+Error < 1.0 m after:     31.0 sec
+
+
+--- Unscented particle filter ---
+
+Elapsed time:            4.1 sec
+RMSE:                    0.72 m  
+Error < 1.0 m after:     2.0 sec
+
+
+--- Particle filter with contractor ---
+
+Elapsed time:            3.0 sec
+RMSE:                    0.28 m  
+No. weights set to zero: 850 (4.2 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with contractor ---
+
+Elapsed time:            4.7 sec
+RMSE:                    0.24 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--- Particle filter with SIVIA ---
+
+Elapsed time:            22.0 sec
+RMSE:                    0.28 m  
+No. weights set to zero: 843 (4.2 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with SIVIA ---
+
+Elapsed time:            21.9 sec
+RMSE:                    0.24 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--------------------------------------------------------
+
+--- Run no. 63 -----------------------
+
+
+--- Particle filter ---
+
+Elapsed time:            2.5 sec
+RMSE:                    7.48 m  
+Error < 1.0 m after:     15.0 sec
+
+
+--- Unscented particle filter ---
+
+Elapsed time:            4.1 sec
+RMSE:                    1.76 m  
+Error < 1.0 m after:     3.0 sec
+
+
+--- Particle filter with contractor ---
+
+Elapsed time:            3.0 sec
+RMSE:                    0.27 m  
+No. weights set to zero: 885 (4.4 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with contractor ---
+
+Elapsed time:            4.5 sec
+RMSE:                    0.24 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--- Particle filter with SIVIA ---
+
+Elapsed time:            17.8 sec
+RMSE:                    0.27 m  
+No. weights set to zero: 838 (4.2 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with SIVIA ---
+
+Elapsed time:            21.4 sec
+RMSE:                    0.24 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--------------------------------------------------------
+
+--- Run no. 64 -----------------------
+
+
+--- Particle filter ---
+
+Elapsed time:            2.5 sec
+RMSE:                    17.58 m  
+Error < 1.0 m after:     21.0 sec
+
+
+--- Unscented particle filter ---
+
+Elapsed time:            4.7 sec
+RMSE:                    2.36 m  
+Error < 1.0 m after:     4.0 sec
+
+
+--- Particle filter with contractor ---
+
+Elapsed time:            3.2 sec
+RMSE:                    0.27 m  
+No. weights set to zero: 916 (4.6 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with contractor ---
+
+Elapsed time:            5.3 sec
+RMSE:                    0.24 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--- Particle filter with SIVIA ---
+
+Elapsed time:            25.3 sec
+RMSE:                    0.27 m  
+No. weights set to zero: 901 (4.5 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with SIVIA ---
+
+Elapsed time:            22.3 sec
+RMSE:                    0.24 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--------------------------------------------------------
+
+--- Run no. 65 -----------------------
+
+
+--- Particle filter ---
+
+Elapsed time:            4.1 sec
+RMSE:                    12.77 m  
+Error < 1.0 m after:     18.0 sec
+
+
+--- Unscented particle filter ---
+
+Elapsed time:            4.2 sec
+RMSE:                    0.96 m  
+Error < 1.0 m after:     2.0 sec
+
+
+--- Particle filter with contractor ---
+
+Elapsed time:            3.1 sec
+RMSE:                    0.27 m  
+No. weights set to zero: 889 (4.4 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with contractor ---
+
+Elapsed time:            4.7 sec
+RMSE:                    0.24 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--- Particle filter with SIVIA ---
+
+Elapsed time:            21.6 sec
+RMSE:                    0.28 m  
+No. weights set to zero: 865 (4.3 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with SIVIA ---
+
+Elapsed time:            21.5 sec
+RMSE:                    0.24 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--------------------------------------------------------
+
+--- Run no. 66 -----------------------
+
+
+--- Particle filter ---
+
+Elapsed time:            2.6 sec
+RMSE:                    6.62 m  
+Error < 1.0 m after:     19.0 sec
+
+
+--- Unscented particle filter ---
+
+Elapsed time:            4.2 sec
+RMSE:                    0.31 m  
+Error < 1.0 m after:     2.0 sec
+
+
+--- Particle filter with contractor ---
+
+Elapsed time:            3.0 sec
+RMSE:                    0.29 m  
+No. weights set to zero: 980 (4.9 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with contractor ---
+
+Elapsed time:            4.5 sec
+RMSE:                    0.24 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--- Particle filter with SIVIA ---
+
+Elapsed time:            19.1 sec
+RMSE:                    0.27 m  
+No. weights set to zero: 904 (4.5 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with SIVIA ---
+
+Elapsed time:            22.2 sec
+RMSE:                    0.24 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--------------------------------------------------------
+
+--- Run no. 67 -----------------------
+
+
+--- Particle filter ---
+
+Elapsed time:            2.6 sec
+RMSE:                    12.39 m  
+Error < 1.0 m after:     21.0 sec
+
+
+--- Unscented particle filter ---
+
+Elapsed time:            5.1 sec
+RMSE:                    1.03 m  
+Error < 1.0 m after:     3.0 sec
+
+
+--- Particle filter with contractor ---
+
+Elapsed time:            3.9 sec
+RMSE:                    0.27 m  
+No. weights set to zero: 899 (4.5 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with contractor ---
+
+Elapsed time:            5.4 sec
+RMSE:                    0.24 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--- Particle filter with SIVIA ---
+
+Elapsed time:            24.0 sec
+RMSE:                    0.29 m  
+No. weights set to zero: 835 (4.2 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with SIVIA ---
+
+Elapsed time:            24.4 sec
+RMSE:                    0.24 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--------------------------------------------------------
+
+--- Run no. 68 -----------------------
+
+
+--- Particle filter ---
+
+Elapsed time:            4.4 sec
+RMSE:                    3.39 m  
+Error < 1.0 m after:     14.0 sec
+
+
+--- Unscented particle filter ---
+
+Elapsed time:            4.4 sec
+RMSE:                    0.40 m  
+Error < 1.0 m after:     2.0 sec
+
+
+--- Particle filter with contractor ---
+
+Elapsed time:            3.1 sec
+RMSE:                    0.28 m  
+No. weights set to zero: 930 (4.7 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with contractor ---
+
+Elapsed time:            4.9 sec
+RMSE:                    0.24 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--- Particle filter with SIVIA ---
+
+Elapsed time:            20.8 sec
+RMSE:                    0.26 m  
+No. weights set to zero: 816 (4.1 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with SIVIA ---
+
+Elapsed time:            22.2 sec
+RMSE:                    0.24 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--------------------------------------------------------
+
+--- Run no. 69 -----------------------
+
+
+--- Particle filter ---
+
+Elapsed time:            2.5 sec
+RMSE:                    15.56 m  
+Error < 1.0 m after:     23.0 sec
+
+
+--- Unscented particle filter ---
+
+Elapsed time:            4.2 sec
+RMSE:                    0.40 m  
+Error < 1.0 m after:     2.0 sec
+
+
+--- Particle filter with contractor ---
+
+Elapsed time:            3.1 sec
+RMSE:                    0.28 m  
+No. weights set to zero: 911 (4.6 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with contractor ---
+
+Elapsed time:            4.7 sec
+RMSE:                    0.24 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--- Particle filter with SIVIA ---
+
+Elapsed time:            20.7 sec
+RMSE:                    0.27 m  
+No. weights set to zero: 809 (4.0 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with SIVIA ---
+
+Elapsed time:            27.0 sec
+RMSE:                    0.24 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--------------------------------------------------------
+
+--- Run no. 70 -----------------------
+
+
+--- Particle filter ---
+
+Elapsed time:            2.5 sec
+RMSE:                    2.16 m  
+Error < 1.0 m after:     9.0 sec
+
+
+--- Unscented particle filter ---
+
+Elapsed time:            4.2 sec
+RMSE:                    0.30 m  
+Error < 1.0 m after:     2.0 sec
+
+
+--- Particle filter with contractor ---
+
+Elapsed time:            3.2 sec
+RMSE:                    0.29 m  
+No. weights set to zero: 886 (4.4 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with contractor ---
+
+Elapsed time:            4.6 sec
+RMSE:                    0.24 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--- Particle filter with SIVIA ---
+
+Elapsed time:            22.3 sec
+RMSE:                    0.27 m  
+No. weights set to zero: 845 (4.2 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with SIVIA ---
+
+Elapsed time:            24.3 sec
+RMSE:                    0.24 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--------------------------------------------------------
+
+--- Run no. 71 -----------------------
+
+
+--- Particle filter ---
+
+Elapsed time:            3.1 sec
+RMSE:                    13.03 m  
+Error < 1.0 m after:     31.0 sec
+
+
+--- Unscented particle filter ---
+
+Elapsed time:            5.2 sec
+RMSE:                    1.07 m  
+Error < 1.0 m after:     2.0 sec
+
+
+--- Particle filter with contractor ---
+
+Elapsed time:            4.2 sec
+RMSE:                    0.27 m  
+No. weights set to zero: 911 (4.6 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with contractor ---
+
+Elapsed time:            4.6 sec
+RMSE:                    0.24 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--- Particle filter with SIVIA ---
+
+Elapsed time:            21.3 sec
+RMSE:                    0.28 m  
+No. weights set to zero: 879 (4.4 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with SIVIA ---
+
+Elapsed time:            22.1 sec
+RMSE:                    0.23 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--------------------------------------------------------
+
+--- Run no. 72 -----------------------
+
+
+--- Particle filter ---
+
+Elapsed time:            2.5 sec
+RMSE:                    2.20 m  
+Error < 1.0 m after:     8.0 sec
+
+
+--- Unscented particle filter ---
+
+Elapsed time:            4.1 sec
+RMSE:                    2.65 m  
+Error < 1.0 m after:     3.0 sec
+
+
+--- Particle filter with contractor ---
+
+Elapsed time:            3.0 sec
+RMSE:                    0.28 m  
+No. weights set to zero: 931 (4.7 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with contractor ---
+
+Elapsed time:            4.7 sec
+RMSE:                    0.23 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--- Particle filter with SIVIA ---
+
+Elapsed time:            20.6 sec
+RMSE:                    0.28 m  
+No. weights set to zero: 824 (4.1 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with SIVIA ---
+
+Elapsed time:            22.0 sec
+RMSE:                    0.23 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--------------------------------------------------------
+
+--- Run no. 73 -----------------------
+
+
+--- Particle filter ---
+
+Elapsed time:            2.5 sec
+RMSE:                    5.57 m  
+Error < 1.0 m after:     27.0 sec
+
+
+--- Unscented particle filter ---
+
+Elapsed time:            4.2 sec
+RMSE:                    2.03 m  
+Error < 1.0 m after:     3.0 sec
+
+
+--- Particle filter with contractor ---
+
+Elapsed time:            3.1 sec
+RMSE:                    0.27 m  
+No. weights set to zero: 889 (4.4 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with contractor ---
+
+Elapsed time:            4.6 sec
+RMSE:                    0.24 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--- Particle filter with SIVIA ---
+
+Elapsed time:            20.6 sec
+RMSE:                    0.29 m  
+No. weights set to zero: 840 (4.2 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with SIVIA ---
+
+Elapsed time:            22.1 sec
+RMSE:                    0.23 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--------------------------------------------------------
+
+--- Run no. 74 -----------------------
+
+
+--- Particle filter ---
+
+Elapsed time:            2.4 sec
+RMSE:                    12.81 m  
+Error < 1.0 m after:     23.0 sec
+
+
+--- Unscented particle filter ---
+
+Elapsed time:            4.2 sec
+RMSE:                    1.15 m  
+Error < 1.0 m after:     2.0 sec
+
+
+--- Particle filter with contractor ---
+
+Elapsed time:            3.0 sec
+RMSE:                    0.29 m  
+No. weights set to zero: 955 (4.8 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with contractor ---
+
+Elapsed time:            4.6 sec
+RMSE:                    0.23 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--- Particle filter with SIVIA ---
+
+Elapsed time:            20.5 sec
+RMSE:                    0.26 m  
+No. weights set to zero: 810 (4.0 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with SIVIA ---
+
+Elapsed time:            22.1 sec
+RMSE:                    0.23 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--------------------------------------------------------
+
+--- Run no. 75 -----------------------
+
+
+--- Particle filter ---
+
+Elapsed time:            2.5 sec
+RMSE:                    4.86 m  
+Error < 1.0 m after:     21.0 sec
+
+
+--- Unscented particle filter ---
+
+Elapsed time:            4.1 sec
+RMSE:                    0.56 m  
+Error < 1.0 m after:     3.0 sec
+
+
+--- Particle filter with contractor ---
+
+Elapsed time:            3.1 sec
+RMSE:                    0.28 m  
+No. weights set to zero: 897 (4.5 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with contractor ---
+
+Elapsed time:            4.6 sec
+RMSE:                    0.23 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--- Particle filter with SIVIA ---
+
+Elapsed time:            20.6 sec
+RMSE:                    0.28 m  
+No. weights set to zero: 823 (4.1 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with SIVIA ---
+
+Elapsed time:            22.1 sec
+RMSE:                    0.24 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--------------------------------------------------------
+
+--- Run no. 76 -----------------------
+
+
+--- Particle filter ---
+
+Elapsed time:            2.3 sec
+RMSE:                    9.74 m  
+Error < 1.0 m after:     17.0 sec
+
+
+--- Unscented particle filter ---
+
+Elapsed time:            4.1 sec
+RMSE:                    4.90 m  
+Error < 1.0 m after:     3.0 sec
+
+
+--- Particle filter with contractor ---
+
+Elapsed time:            3.0 sec
+RMSE:                    0.26 m  
+No. weights set to zero: 914 (4.6 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with contractor ---
+
+Elapsed time:            4.5 sec
+RMSE:                    0.24 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--- Particle filter with SIVIA ---
+
+Elapsed time:            20.6 sec
+RMSE:                    0.28 m  
+No. weights set to zero: 837 (4.2 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with SIVIA ---
+
+Elapsed time:            22.1 sec
+RMSE:                    0.23 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--------------------------------------------------------
+
+--- Run no. 77 -----------------------
+
+
+--- Particle filter ---
+
+Elapsed time:            2.4 sec
+RMSE:                    8.40 m  
+Error < 1.0 m after:     16.0 sec
+
+
+--- Unscented particle filter ---
+
+Elapsed time:            4.2 sec
+RMSE:                    1.37 m  
+Error < 1.0 m after:     3.0 sec
+
+
+--- Particle filter with contractor ---
+
+Elapsed time:            3.1 sec
+RMSE:                    0.28 m  
+No. weights set to zero: 886 (4.4 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with contractor ---
+
+Elapsed time:            4.5 sec
+RMSE:                    0.23 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--- Particle filter with SIVIA ---
+
+Elapsed time:            20.6 sec
+RMSE:                    0.29 m  
+No. weights set to zero: 877 (4.4 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with SIVIA ---
+
+Elapsed time:            22.1 sec
+RMSE:                    0.24 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--------------------------------------------------------
+
+--- Run no. 78 -----------------------
+
+
+--- Particle filter ---
+
+Elapsed time:            2.6 sec
+RMSE:                    20.35 m  
+Error < 1.0 m after:     22.0 sec
+
+
+--- Unscented particle filter ---
+
+Elapsed time:            4.2 sec
+RMSE:                    0.40 m  
+Error < 1.0 m after:     2.0 sec
+
+
+--- Particle filter with contractor ---
+
+Elapsed time:            3.1 sec
+RMSE:                    0.28 m  
+No. weights set to zero: 872 (4.4 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with contractor ---
+
+Elapsed time:            4.6 sec
+RMSE:                    0.24 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--- Particle filter with SIVIA ---
+
+Elapsed time:            20.6 sec
+RMSE:                    0.29 m  
+No. weights set to zero: 864 (4.3 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with SIVIA ---
+
+Elapsed time:            22.1 sec
+RMSE:                    0.23 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--------------------------------------------------------
+
+--- Run no. 79 -----------------------
+
+
+--- Particle filter ---
+
+Elapsed time:            2.4 sec
+RMSE:                    15.13 m  
+Error < 1.0 m after:     21.0 sec
+
+
+--- Unscented particle filter ---
+
+Elapsed time:            4.2 sec
+RMSE:                    0.91 m  
+Error < 1.0 m after:     2.0 sec
+
+
+--- Particle filter with contractor ---
+
+Elapsed time:            3.1 sec
+RMSE:                    0.27 m  
+No. weights set to zero: 881 (4.4 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with contractor ---
+
+Elapsed time:            4.6 sec
+RMSE:                    0.23 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--- Particle filter with SIVIA ---
+
+Elapsed time:            20.6 sec
+RMSE:                    0.27 m  
+No. weights set to zero: 850 (4.2 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with SIVIA ---
+
+Elapsed time:            22.1 sec
+RMSE:                    0.24 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--------------------------------------------------------
+
+--- Run no. 80 -----------------------
+
+
+--- Particle filter ---
+
+Elapsed time:            2.5 sec
+RMSE:                    10.35 m  
+Error < 1.0 m after:     17.0 sec
+
+
+--- Unscented particle filter ---
+
+Elapsed time:            4.1 sec
+RMSE:                    4.20 m  
+Error < 1.0 m after:     4.0 sec
+
+
+--- Particle filter with contractor ---
+
+Elapsed time:            3.1 sec
+RMSE:                    0.28 m  
+No. weights set to zero: 957 (4.8 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with contractor ---
+
+Elapsed time:            4.5 sec
+RMSE:                    0.23 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--- Particle filter with SIVIA ---
+
+Elapsed time:            20.6 sec
+RMSE:                    0.27 m  
+No. weights set to zero: 821 (4.1 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with SIVIA ---
+
+Elapsed time:            22.1 sec
+RMSE:                    0.23 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--------------------------------------------------------
+
+--- Run no. 81 -----------------------
+
+
+--- Particle filter ---
+
+Elapsed time:            2.4 sec
+RMSE:                    7.62 m  
+Error < 1.0 m after:     13.0 sec
+
+
+--- Unscented particle filter ---
+
+Elapsed time:            4.2 sec
+RMSE:                    0.34 m  
+Error < 1.0 m after:     2.0 sec
+
+
+--- Particle filter with contractor ---
+
+Elapsed time:            3.1 sec
+RMSE:                    0.27 m  
+No. weights set to zero: 927 (4.6 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with contractor ---
+
+Elapsed time:            4.6 sec
+RMSE:                    0.24 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--- Particle filter with SIVIA ---
+
+Elapsed time:            20.6 sec
+RMSE:                    0.26 m  
+No. weights set to zero: 867 (4.3 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with SIVIA ---
+
+Elapsed time:            22.1 sec
+RMSE:                    0.23 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--------------------------------------------------------
+
+--- Run no. 82 -----------------------
+
+
+--- Particle filter ---
+
+Elapsed time:            2.5 sec
+RMSE:                    4.14 m  
+Error < 1.0 m after:     11.0 sec
+
+
+--- Unscented particle filter ---
+
+Elapsed time:            4.1 sec
+RMSE:                    0.28 m  
+Error < 1.0 m after:     1.0 sec
+
+
+--- Particle filter with contractor ---
+
+Elapsed time:            3.0 sec
+RMSE:                    0.28 m  
+No. weights set to zero: 906 (4.5 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with contractor ---
+
+Elapsed time:            4.6 sec
+RMSE:                    0.23 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--- Particle filter with SIVIA ---
+
+Elapsed time:            20.5 sec
+RMSE:                    0.27 m  
+No. weights set to zero: 792 (4.0 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with SIVIA ---
+
+Elapsed time:            22.1 sec
+RMSE:                    0.23 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--------------------------------------------------------
+
+--- Run no. 83 -----------------------
+
+
+--- Particle filter ---
+
+Elapsed time:            2.5 sec
+RMSE:                    11.27 m  
+Error < 1.0 m after:     16.0 sec
+
+
+--- Unscented particle filter ---
+
+Elapsed time:            4.1 sec
+RMSE:                    0.85 m  
+Error < 1.0 m after:     2.0 sec
+
+
+--- Particle filter with contractor ---
+
+Elapsed time:            3.1 sec
+RMSE:                    0.28 m  
+No. weights set to zero: 913 (4.6 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with contractor ---
+
+Elapsed time:            4.6 sec
+RMSE:                    0.24 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--- Particle filter with SIVIA ---
+
+Elapsed time:            20.5 sec
+RMSE:                    0.29 m  
+No. weights set to zero: 866 (4.3 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with SIVIA ---
+
+Elapsed time:            22.0 sec
+RMSE:                    0.24 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--------------------------------------------------------
+
+--- Run no. 84 -----------------------
+
+
+--- Particle filter ---
+
+Elapsed time:            2.5 sec
+RMSE:                    6.62 m  
+Error < 1.0 m after:     15.0 sec
+
+
+--- Unscented particle filter ---
+
+Elapsed time:            4.1 sec
+RMSE:                    5.28 m  
+Error < 1.0 m after:     4.0 sec
+
+
+--- Particle filter with contractor ---
+
+Elapsed time:            3.1 sec
+RMSE:                    0.29 m  
+No. weights set to zero: 872 (4.4 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with contractor ---
+
+Elapsed time:            4.6 sec
+RMSE:                    0.24 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--- Particle filter with SIVIA ---
+
+Elapsed time:            20.6 sec
+RMSE:                    0.26 m  
+No. weights set to zero: 784 (3.9 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with SIVIA ---
+
+Elapsed time:            22.0 sec
+RMSE:                    0.24 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--------------------------------------------------------
+
+--- Run no. 85 -----------------------
+
+
+--- Particle filter ---
+
+Elapsed time:            2.6 sec
+RMSE:                    4.44 m  
+Error < 1.0 m after:     14.0 sec
+
+
+--- Unscented particle filter ---
+
+Elapsed time:            4.2 sec
+RMSE:                    0.47 m  
+Error < 1.0 m after:     2.0 sec
+
+
+--- Particle filter with contractor ---
+
+Elapsed time:            3.1 sec
+RMSE:                    0.29 m  
+No. weights set to zero: 945 (4.7 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with contractor ---
+
+Elapsed time:            4.6 sec
+RMSE:                    0.24 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--- Particle filter with SIVIA ---
+
+Elapsed time:            20.6 sec
+RMSE:                    0.26 m  
+No. weights set to zero: 877 (4.4 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with SIVIA ---
+
+Elapsed time:            22.1 sec
+RMSE:                    0.24 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--------------------------------------------------------
+
+--- Run no. 86 -----------------------
+
+
+--- Particle filter ---
+
+Elapsed time:            2.4 sec
+RMSE:                    3.98 m  
+Error < 1.0 m after:     11.0 sec
+
+
+--- Unscented particle filter ---
+
+Elapsed time:            4.1 sec
+RMSE:                    1.41 m  
+Error < 1.0 m after:     3.0 sec
+
+
+--- Particle filter with contractor ---
+
+Elapsed time:            3.1 sec
+RMSE:                    0.29 m  
+No. weights set to zero: 908 (4.5 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with contractor ---
+
+Elapsed time:            4.6 sec
+RMSE:                    0.24 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--- Particle filter with SIVIA ---
+
+Elapsed time:            20.6 sec
+RMSE:                    0.27 m  
+No. weights set to zero: 895 (4.5 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with SIVIA ---
+
+Elapsed time:            22.1 sec
+RMSE:                    0.24 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--------------------------------------------------------
+
+--- Run no. 87 -----------------------
+
+
+--- Particle filter ---
+
+Elapsed time:            2.5 sec
+RMSE:                    19.79 m  
+Error < 1.0 m after:     22.0 sec
+
+
+--- Unscented particle filter ---
+
+Elapsed time:            4.2 sec
+RMSE:                    2.78 m  
+Error < 1.0 m after:     3.0 sec
+
+
+--- Particle filter with contractor ---
+
+Elapsed time:            3.0 sec
+RMSE:                    0.27 m  
+No. weights set to zero: 898 (4.5 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with contractor ---
+
+Elapsed time:            4.6 sec
+RMSE:                    0.24 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--- Particle filter with SIVIA ---
+
+Elapsed time:            20.6 sec
+RMSE:                    0.26 m  
+No. weights set to zero: 842 (4.2 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with SIVIA ---
+
+Elapsed time:            22.1 sec
+RMSE:                    0.24 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--------------------------------------------------------
+
+--- Run no. 88 -----------------------
+
+
+--- Particle filter ---
+
+Elapsed time:            2.5 sec
+RMSE:                    13.02 m  
+Error < 1.0 m after:     20.0 sec
+
+
+--- Unscented particle filter ---
+
+Elapsed time:            4.1 sec
+RMSE:                    0.64 m  
+Error < 1.0 m after:     3.0 sec
+
+
+--- Particle filter with contractor ---
+
+Elapsed time:            3.1 sec
+RMSE:                    0.28 m  
+No. weights set to zero: 936 (4.7 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with contractor ---
+
+Elapsed time:            4.6 sec
+RMSE:                    0.24 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--- Particle filter with SIVIA ---
+
+Elapsed time:            20.6 sec
+RMSE:                    0.27 m  
+No. weights set to zero: 823 (4.1 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with SIVIA ---
+
+Elapsed time:            22.0 sec
+RMSE:                    0.23 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--------------------------------------------------------
+
+--- Run no. 89 -----------------------
+
+
+--- Particle filter ---
+
+Elapsed time:            2.4 sec
+RMSE:                    14.10 m  
+Error < 1.0 m after:     17.0 sec
+
+
+--- Unscented particle filter ---
+
+Elapsed time:            4.2 sec
+RMSE:                    3.60 m  
+Error < 1.0 m after:     4.0 sec
+
+
+--- Particle filter with contractor ---
+
+Elapsed time:            3.1 sec
+RMSE:                    0.27 m  
+No. weights set to zero: 904 (4.5 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with contractor ---
+
+Elapsed time:            4.6 sec
+RMSE:                    0.24 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--- Particle filter with SIVIA ---
+
+Elapsed time:            20.6 sec
+RMSE:                    0.30 m  
+No. weights set to zero: 811 (4.1 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with SIVIA ---
+
+Elapsed time:            22.0 sec
+RMSE:                    0.24 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--------------------------------------------------------
+
+--- Run no. 90 -----------------------
+
+
+--- Particle filter ---
+
+Elapsed time:            2.5 sec
+RMSE:                    2.04 m  
+Error < 1.0 m after:     14.0 sec
+
+
+--- Unscented particle filter ---
+
+Elapsed time:            4.1 sec
+RMSE:                    1.74 m  
+Error < 1.0 m after:     3.0 sec
+
+
+--- Particle filter with contractor ---
+
+Elapsed time:            3.0 sec
+RMSE:                    0.28 m  
+No. weights set to zero: 885 (4.4 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with contractor ---
+
+Elapsed time:            4.6 sec
+RMSE:                    0.23 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--- Particle filter with SIVIA ---
+
+Elapsed time:            20.6 sec
+RMSE:                    0.28 m  
+No. weights set to zero: 916 (4.6 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with SIVIA ---
+
+Elapsed time:            22.1 sec
+RMSE:                    0.24 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--------------------------------------------------------
+
+--- Run no. 91 -----------------------
+
+
+--- Particle filter ---
+
+Elapsed time:            2.5 sec
+RMSE:                    10.77 m  
+Error < 1.0 m after:     16.0 sec
+
+
+--- Unscented particle filter ---
+
+Elapsed time:            4.2 sec
+RMSE:                    1.64 m  
+Error < 1.0 m after:     3.0 sec
+
+
+--- Particle filter with contractor ---
+
+Elapsed time:            3.1 sec
+RMSE:                    0.28 m  
+No. weights set to zero: 898 (4.5 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with contractor ---
+
+Elapsed time:            4.6 sec
+RMSE:                    0.24 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--- Particle filter with SIVIA ---
+
+Elapsed time:            20.6 sec
+RMSE:                    0.28 m  
+No. weights set to zero: 897 (4.5 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with SIVIA ---
+
+Elapsed time:            22.1 sec
+RMSE:                    0.24 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--------------------------------------------------------
+
+--- Run no. 92 -----------------------
+
+
+--- Particle filter ---
+
+Elapsed time:            2.4 sec
+RMSE:                    4.97 m  
+Error < 1.0 m after:     11.0 sec
+
+
+--- Unscented particle filter ---
+
+Elapsed time:            4.1 sec
+RMSE:                    0.69 m  
+Error < 1.0 m after:     3.0 sec
+
+
+--- Particle filter with contractor ---
+
+Elapsed time:            3.0 sec
+RMSE:                    0.28 m  
+No. weights set to zero: 926 (4.6 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with contractor ---
+
+Elapsed time:            4.6 sec
+RMSE:                    0.24 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--- Particle filter with SIVIA ---
+
+Elapsed time:            20.6 sec
+RMSE:                    0.27 m  
+No. weights set to zero: 855 (4.3 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with SIVIA ---
+
+Elapsed time:            22.4 sec
+RMSE:                    0.23 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--------------------------------------------------------
+
+--- Run no. 93 -----------------------
+
+
+--- Particle filter ---
+
+Elapsed time:            2.4 sec
+RMSE:                    4.44 m  
+Error < 1.0 m after:     17.0 sec
+
+
+--- Unscented particle filter ---
+
+Elapsed time:            4.1 sec
+RMSE:                    3.87 m  
+Error < 1.0 m after:     3.0 sec
+
+
+--- Particle filter with contractor ---
+
+Elapsed time:            3.1 sec
+RMSE:                    0.28 m  
+No. weights set to zero: 913 (4.6 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with contractor ---
+
+Elapsed time:            4.6 sec
+RMSE:                    0.23 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--- Particle filter with SIVIA ---
+
+Elapsed time:            20.6 sec
+RMSE:                    0.28 m  
+No. weights set to zero: 898 (4.5 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with SIVIA ---
+
+Elapsed time:            22.1 sec
+RMSE:                    0.24 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--------------------------------------------------------
+
+--- Run no. 94 -----------------------
+
+
+--- Particle filter ---
+
+Elapsed time:            2.4 sec
+RMSE:                    5.14 m  
+Error < 1.0 m after:     19.0 sec
+
+
+--- Unscented particle filter ---
+
+Elapsed time:            4.2 sec
+RMSE:                    0.66 m  
+Error < 1.0 m after:     3.0 sec
+
+
+--- Particle filter with contractor ---
+
+Elapsed time:            3.0 sec
+RMSE:                    0.28 m  
+No. weights set to zero: 941 (4.7 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with contractor ---
+
+Elapsed time:            4.6 sec
+RMSE:                    0.23 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--- Particle filter with SIVIA ---
+
+Elapsed time:            20.7 sec
+RMSE:                    0.28 m  
+No. weights set to zero: 893 (4.5 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with SIVIA ---
+
+Elapsed time:            22.1 sec
+RMSE:                    0.23 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--------------------------------------------------------
+
+--- Run no. 95 -----------------------
+
+
+--- Particle filter ---
+
+Elapsed time:            2.4 sec
+RMSE:                    3.90 m  
+Error < 1.0 m after:     11.0 sec
+
+
+--- Unscented particle filter ---
+
+Elapsed time:            4.2 sec
+RMSE:                    0.50 m  
+Error < 1.0 m after:     2.0 sec
+
+
+--- Particle filter with contractor ---
+
+Elapsed time:            3.1 sec
+RMSE:                    0.29 m  
+No. weights set to zero: 921 (4.6 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with contractor ---
+
+Elapsed time:            4.6 sec
+RMSE:                    0.23 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--- Particle filter with SIVIA ---
+
+Elapsed time:            20.6 sec
+RMSE:                    0.28 m  
+No. weights set to zero: 869 (4.3 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with SIVIA ---
+
+Elapsed time:            22.1 sec
+RMSE:                    0.24 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--------------------------------------------------------
+
+--- Run no. 96 -----------------------
+
+
+--- Particle filter ---
+
+Elapsed time:            2.4 sec
+RMSE:                    8.50 m  
+Error < 1.0 m after:     27.0 sec
+
+
+--- Unscented particle filter ---
+
+Elapsed time:            4.1 sec
+RMSE:                    1.02 m  
+Error < 1.0 m after:     3.0 sec
+
+
+--- Particle filter with contractor ---
+
+Elapsed time:            3.1 sec
+RMSE:                    0.29 m  
+No. weights set to zero: 955 (4.8 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with contractor ---
+
+Elapsed time:            4.6 sec
+RMSE:                    0.23 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--- Particle filter with SIVIA ---
+
+Elapsed time:            20.5 sec
+RMSE:                    0.29 m  
+No. weights set to zero: 905 (4.5 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with SIVIA ---
+
+Elapsed time:            22.2 sec
+RMSE:                    0.23 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--------------------------------------------------------
+
+--- Run no. 97 -----------------------
+
+
+--- Particle filter ---
+
+Elapsed time:            2.5 sec
+RMSE:                    9.86 m  
+Error < 1.0 m after:     21.0 sec
+
+
+--- Unscented particle filter ---
+
+Elapsed time:            4.3 sec
+RMSE:                    1.69 m  
+Error < 1.0 m after:     3.0 sec
+
+
+--- Particle filter with contractor ---
+
+Elapsed time:            3.2 sec
+RMSE:                    0.27 m  
+No. weights set to zero: 879 (4.4 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with contractor ---
+
+Elapsed time:            4.8 sec
+RMSE:                    0.24 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--- Particle filter with SIVIA ---
+
+Elapsed time:            20.8 sec
+RMSE:                    0.27 m  
+No. weights set to zero: 860 (4.3 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with SIVIA ---
+
+Elapsed time:            22.2 sec
+RMSE:                    0.24 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--------------------------------------------------------
+
+--- Run no. 98 -----------------------
+
+
+--- Particle filter ---
+
+Elapsed time:            2.4 sec
+RMSE:                    12.61 m  
+Error < 1.0 m after:     19.0 sec
+
+
+--- Unscented particle filter ---
+
+Elapsed time:            4.1 sec
+RMSE:                    0.36 m  
+Error < 1.0 m after:     2.0 sec
+
+
+--- Particle filter with contractor ---
+
+Elapsed time:            3.0 sec
+RMSE:                    0.28 m  
+No. weights set to zero: 915 (4.6 %)
+Error < 1.0 m after:     2.0 sec
+
+
+--- Unscented particle filter with contractor ---
+
+Elapsed time:            4.5 sec
+RMSE:                    0.24 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--- Particle filter with SIVIA ---
+
+Elapsed time:            20.7 sec
+RMSE:                    0.28 m  
+No. weights set to zero: 832 (4.2 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with SIVIA ---
+
+Elapsed time:            22.1 sec
+RMSE:                    0.24 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--------------------------------------------------------
+
+--- Run no. 99 -----------------------
+
+
+--- Particle filter ---
+
+Elapsed time:            2.4 sec
+RMSE:                    4.47 m  
+Error < 1.0 m after:     22.0 sec
+
+
+--- Unscented particle filter ---
+
+Elapsed time:            4.2 sec
+RMSE:                    2.68 m  
+Error < 1.0 m after:     3.0 sec
+
+
+--- Particle filter with contractor ---
+
+Elapsed time:            3.0 sec
+RMSE:                    0.30 m  
+No. weights set to zero: 891 (4.5 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with contractor ---
+
+Elapsed time:            4.6 sec
+RMSE:                    0.24 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--- Particle filter with SIVIA ---
+
+Elapsed time:            20.6 sec
+RMSE:                    0.27 m  
+No. weights set to zero: 846 (4.2 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with SIVIA ---
+
+Elapsed time:            22.1 sec
+RMSE:                    0.24 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--------------------------------------------------------
+
+--- Run no. 100 -----------------------
+
+
+--- Particle filter ---
+
+Elapsed time:            2.5 sec
+RMSE:                    8.78 m  
+Error < 1.0 m after:     21.0 sec
+
+
+--- Unscented particle filter ---
+
+Elapsed time:            4.2 sec
+RMSE:                    1.61 m  
+Error < 1.0 m after:     2.0 sec
+
+
+--- Particle filter with contractor ---
+
+Elapsed time:            3.1 sec
+RMSE:                    0.28 m  
+No. weights set to zero: 958 (4.8 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with contractor ---
+
+Elapsed time:            4.6 sec
+RMSE:                    0.24 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--- Particle filter with SIVIA ---
+
+Elapsed time:            20.6 sec
+RMSE:                    0.29 m  
+No. weights set to zero: 910 (4.5 %)
+Error < 1.0 m after:     1.0 sec
+
+
+--- Unscented particle filter with SIVIA ---
+
+Elapsed time:            22.1 sec
+RMSE:                    0.23 m       
+No. weights set to zero: 0 (0.0 %)
+Error < 1.0 m after:     1.0 sec   
+
+
+--------------------------------------------------------
+
+--- Overall performance ---
+
+Mean RMSE:                  
+PF:                        8.44 m
+UPF:                       1.85 m
+PFC:                       0.28 m
+UPFC:                      0.24 m
+PFS:                       0.28 m
+UPFS:                      0.24 m
+
+Mean initial error:               
+PF:                        61.89 m
+UPF:                       25.13 m
+PFC:                       0.53 m
+UPFC:                      0.36 m
+PFS:                       0.41 m
+UPFS:                      0.36 m
+
+Error < 1.0 m after:              
+PF:                        43.00 sec
+UPF:                       2.00 sec
+PFC:                       0.00 sec
+UPFC:                      0.00 sec
+PFS:                       0.00 sec
+UPFS:                      0.00 sec
+
+Mean computation time:              
+PF:                         2.6 sec
+UPF:                        4.2 sec
+PFC:                        3.1 sec
+UPFC:                       4.7 sec
+PFS:                       19.9 sec
+UPFS:                      21.1 sec
+
+Computation time relative to PF:    
+UPF:                       1.64    
+PFC:                       1.22    
+UPFC:                      1.81    
+PFS:                       7.71    
+UPFS:                      8.20    
+
+Mean no. of weights set to zero:    
+PFC:                       908 (4.54 %)
+UPFC:                       0 (0.00 %)
+PFS:                       855 (4.28 %)
+UPFS:                       0 (0.00 %)
+
+No. of restarts of the filter:      
+PFC:                        0      
+UPFC:                       0      
+PFS:                        0      
+UPFS:                       0      
+

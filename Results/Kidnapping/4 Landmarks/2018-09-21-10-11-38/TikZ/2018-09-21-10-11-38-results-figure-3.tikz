@@ -1,0 +1,292 @@
+% This file was created by matlab2tikz.
+%
+\begin{tikzpicture}
+
+\begin{axis}[%
+width=0.951\figurewidth,
+height=\figureheight,
+at={(0\figurewidth,0\figureheight)},
+scale only axis,
+unbounded coords=jump,
+xmin=0.5,
+xmax=6.5,
+xtick={1,2,3,4,5,6},
+xticklabels={{PF},{UPF},{PFC},{UPFC},{PFS},{UPFS}},
+ymode=log,
+ymin=-14.0779433172185,
+ymax=299.068737838302,
+yminorticks=true,
+ylabel style={font=\color{white!15!black}},
+ylabel={Error in m},
+axis background/.style={fill=white},
+title style={font=\bfseries},
+title={Trajectory 4 with 4 landmarks -- box plot of kidnap errors after 100 runs},
+ymajorgrids,
+yminorgrids,
+legend style={legend cell align=left, align=left, draw=white!15!black}
+]
+\addplot [color=black, dashed, forget plot]
+  table[row sep=crcr]{%
+1	92.2691182018921\\
+1	97.7025315429078\\
+};
+\addplot [color=black, dashed, forget plot]
+  table[row sep=crcr]{%
+2	49.3638883849512\\
+2	49.3932809047228\\
+};
+\addplot [color=black, dashed, forget plot]
+  table[row sep=crcr]{%
+3	16.016514526508\\
+3	21.4633016252022\\
+};
+\addplot [color=black, dashed, forget plot]
+  table[row sep=crcr]{%
+4	15.758960127834\\
+4	22.2187647728983\\
+};
+\addplot [color=black, dashed, forget plot]
+  table[row sep=crcr]{%
+5	0.714009263321769\\
+5	0.975543826399704\\
+};
+\addplot [color=black, dashed, forget plot]
+  table[row sep=crcr]{%
+6	0.968775711012154\\
+6	1.44782697451146\\
+};
+\addplot [color=black, dashed, forget plot]
+  table[row sep=crcr]{%
+1	80.9331846281441\\
+1	86.7278365315427\\
+};
+\addplot [color=black, dashed, forget plot]
+  table[row sep=crcr]{%
+2	49.3058434112082\\
+2	49.3372372621335\\
+};
+\addplot [color=black, dashed, forget plot]
+  table[row sep=crcr]{%
+3	5.17765824960211\\
+3	11.5122711645483\\
+};
+\addplot [color=black, dashed, forget plot]
+  table[row sep=crcr]{%
+4	4.12827434739856\\
+4	10.0178063849392\\
+};
+\addplot [color=black, dashed, forget plot]
+  table[row sep=crcr]{%
+5	0.394028473136233\\
+5	0.528604570961456\\
+};
+\addplot [color=black, dashed, forget plot]
+  table[row sep=crcr]{%
+6	0.15599673530508\\
+6	0.619544321672719\\
+};
+\addplot [color=black, forget plot]
+  table[row sep=crcr]{%
+0.875	97.7025315429078\\
+1.125	97.7025315429078\\
+};
+\addplot [color=black, forget plot]
+  table[row sep=crcr]{%
+1.875	49.3932809047228\\
+2.125	49.3932809047228\\
+};
+\addplot [color=black, forget plot]
+  table[row sep=crcr]{%
+2.875	21.4633016252022\\
+3.125	21.4633016252022\\
+};
+\addplot [color=black, forget plot]
+  table[row sep=crcr]{%
+3.875	22.2187647728983\\
+4.125	22.2187647728983\\
+};
+\addplot [color=black, forget plot]
+  table[row sep=crcr]{%
+4.875	0.975543826399704\\
+5.125	0.975543826399704\\
+};
+\addplot [color=black, forget plot]
+  table[row sep=crcr]{%
+5.875	1.44782697451146\\
+6.125	1.44782697451146\\
+};
+\addplot [color=black, forget plot]
+  table[row sep=crcr]{%
+0.875	80.9331846281441\\
+1.125	80.9331846281441\\
+};
+\addplot [color=black, forget plot]
+  table[row sep=crcr]{%
+1.875	49.3058434112082\\
+2.125	49.3058434112082\\
+};
+\addplot [color=black, forget plot]
+  table[row sep=crcr]{%
+2.875	5.17765824960211\\
+3.125	5.17765824960211\\
+};
+\addplot [color=black, forget plot]
+  table[row sep=crcr]{%
+3.875	4.12827434739856\\
+4.125	4.12827434739856\\
+};
+\addplot [color=black, forget plot]
+  table[row sep=crcr]{%
+4.875	0.394028473136233\\
+5.125	0.394028473136233\\
+};
+\addplot [color=black, forget plot]
+  table[row sep=crcr]{%
+5.875	0.15599673530508\\
+6.125	0.15599673530508\\
+};
+\addplot [color=blue, forget plot]
+  table[row sep=crcr]{%
+0.875	89.8313349410049\\
+0.75	90.7013161632498\\
+0.75	92.2691182018921\\
+1.25	92.2691182018921\\
+1.25	90.7013161632498\\
+1.125	89.8313349410049\\
+1.25	88.9613537187601\\
+1.25	86.7278365315427\\
+0.75	86.7278365315427\\
+0.75	88.9613537187601\\
+0.875	89.8313349410049\\
+};
+\addplot [color=blue, forget plot]
+  table[row sep=crcr]{%
+1.875	49.3496506119546\\
+1.75	49.353834838237\\
+1.75	49.3638883849512\\
+2.25	49.3638883849512\\
+2.25	49.353834838237\\
+2.125	49.3496506119546\\
+2.25	49.3454663856722\\
+2.25	49.3372372621335\\
+1.75	49.3372372621335\\
+1.75	49.3454663856722\\
+1.875	49.3496506119546\\
+};
+\addplot [color=blue, forget plot]
+  table[row sep=crcr]{%
+2.875	14.0368401966097\\
+2.75	14.7440064044373\\
+2.75	16.016514526508\\
+3.25	16.016514526508\\
+3.25	14.7440064044373\\
+3.125	14.0368401966097\\
+3.25	13.329673988782\\
+3.25	11.5122711645483\\
+2.75	11.5122711645483\\
+2.75	13.329673988782\\
+2.875	14.0368401966097\\
+};
+\addplot [color=blue, forget plot]
+  table[row sep=crcr]{%
+3.875	13.166306671185\\
+3.75	14.0676678088195\\
+3.75	15.758960127834\\
+4.25	15.758960127834\\
+4.25	14.0676678088195\\
+4.125	13.166306671185\\
+4.25	12.2649455335505\\
+4.25	10.0178063849392\\
+3.75	10.0178063849392\\
+3.75	12.2649455335505\\
+3.875	13.166306671185\\
+};
+\addplot [color=blue, forget plot]
+  table[row sep=crcr]{%
+4.875	0.60386170675275\\
+4.75	0.632970243453319\\
+4.75	0.714009263321769\\
+5.25	0.714009263321769\\
+5.25	0.632970243453319\\
+5.125	0.60386170675275\\
+5.25	0.57475317005218\\
+5.25	0.528604570961456\\
+4.75	0.528604570961456\\
+4.75	0.57475317005218\\
+4.875	0.60386170675275\\
+};
+\addplot [color=blue, forget plot]
+  table[row sep=crcr]{%
+5.875	0.759067619531128\\
+5.75	0.813896947657419\\
+5.75	0.968775711012154\\
+6.25	0.968775711012154\\
+6.25	0.813896947657419\\
+6.125	0.759067619531128\\
+6.25	0.704238291404836\\
+6.25	0.619544321672719\\
+5.75	0.619544321672719\\
+5.75	0.704238291404836\\
+5.875	0.759067619531128\\
+};
+\addplot [color=red, forget plot]
+  table[row sep=crcr]{%
+0.875	89.8313349410049\\
+1.125	89.8313349410049\\
+};
+\addplot [color=red, forget plot]
+  table[row sep=crcr]{%
+1.875	49.3496506119546\\
+2.125	49.3496506119546\\
+};
+\addplot [color=red, forget plot]
+  table[row sep=crcr]{%
+2.875	14.0368401966097\\
+3.125	14.0368401966097\\
+};
+\addplot [color=red, forget plot]
+  table[row sep=crcr]{%
+3.875	13.166306671185\\
+4.125	13.166306671185\\
+};
+\addplot [color=red, forget plot]
+  table[row sep=crcr]{%
+4.875	0.60386170675275\\
+5.125	0.60386170675275\\
+};
+\addplot [color=red, forget plot]
+  table[row sep=crcr]{%
+5.875	0.759067619531128\\
+6.125	0.759067619531128\\
+};
+\addplot [color=black, draw=none, mark=+, mark options={solid, red}, forget plot]
+  table[row sep=crcr]{%
+1	78.3001401729666\\
+};
+\addplot [color=black, draw=none, mark=+, mark options={solid, red}, forget plot]
+  table[row sep=crcr]{%
+2	49.2943370983481\\
+2	284.826669866381\\
+2	284.833648546932\\
+2	284.834797785778\\
+};
+\addplot [color=black, draw=none, mark=+, mark options={solid, red}, forget plot]
+  table[row sep=crcr]{%
+3	2.72988417768393\\
+};
+\addplot [color=black, draw=none, mark=+, mark options={solid, red}, forget plot]
+  table[row sep=crcr]{%
+nan	nan\\
+};
+\addplot [color=black, draw=none, mark=+, mark options={solid, red}, forget plot]
+  table[row sep=crcr]{%
+nan	nan\\
+};
+\addplot [color=black, draw=none, mark=+, mark options={solid, red}, forget plot]
+  table[row sep=crcr]{%
+6	1.53339377731395\\
+6	1.57427237785635\\
+6	1.61298493749749\\
+};
+\end{axis}
+\end{tikzpicture}%
