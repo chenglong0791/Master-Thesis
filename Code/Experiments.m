@@ -1,16 +1,20 @@
 %% Clear memory and console, close all figures, load data and parameters
 
 clear, clc, close all
-cd '/Users/rob/Documents/Archive/Master Thesis/Code'
+cd '/Users/rob/Documents/Master Thesis/Code'
+
+addpath(genpath('Functions'));
+addpath(genpath('Toolboxes'));
+addpath(genpath('../Preprocessed Data'));
 
 paramScript = 'param2Landmarks';    % Specify parameterisation script
 
 PF                    = true;       % Particle filter estimation
-UPF                   = false;       % Unscented particle filter estimation
+UPF                   = true;       % Unscented particle filter estimation
 PFC                   = true;       % Particle filter estimation with contractor
-UPFC                  = false;       % Unscented particle filter estimation with contractor
+UPFC                  = true;       % Unscented particle filter estimation with contractor
 PFS                   = true;       % Particle filter estimation with SIVIA
-UPFS                  = false;       % Unscented particle filter estimation with SIVIA
+UPFS                  = true;       % Unscented particle filter estimation with SIVIA
 
 kidnapRobot           = true;       % Kidnap robot
 nRuns                 = 100;        % Number of runs
@@ -19,7 +23,7 @@ plotEstimatesLive     = false;      % Plot 3D trajectory, particles, boxes, and 
 plotResizeLive        = false;      % Resize the figure automatically, zooming into the latest object plotted
 plotFullscreen        = false;      % Make figure full-screen
 plotFirstNSeconds     = 40;         % Plot the first n seconds after start or kidnapping at higher time resolution
-pauseTime             = 5;          % Time between two consecutive updates of live plots in seconds
+pauseTime             = 0;          % Time between two consecutive updates of live plots in seconds
 
 %% Initialise state estimation and error vectors
 
@@ -197,11 +201,11 @@ upfs.boundedErrorProp    = siv;
 %% Log values of interest
 
 logFileName = datestr(now, 'yyyy-mm-dd-HH-MM-SS');
-logFilePath = ['/Users/rob/Documents/Archive//Master Thesis/Results/', logFileName, '/'];
+logFilePath = ['/Users/rob/Documents/Master Thesis/Results/', logFileName, '/'];
 mkdir(logFilePath);
 
 % Save current data set for repetition of experiments
-copyfile(['/Users/rob/Documents/Archive/Master Thesis/Preprocessed data/', fileName, '.mat'], ...
+copyfile(['/Users/rob/Documents/Master Thesis/Preprocessed data/', fileName, '.mat'], ...
     [logFilePath, 'Data_', fileName, '.mat']);
 fileName    = strrep(fileName, '_' , ' ');
 diary([logFilePath, logFileName, '.log']);
@@ -598,12 +602,12 @@ fprintf(['PFS:                       %4.1f sec', newline ],  meanTimePFS);
 fprintf(['UPFS:                      %4.1f sec', newline2],  meanTimeUPFS);
 
 fprintf(['Computation time relative to PF:    ', newline ]);
-fprintf(['PF:                        %3.2f    ', newline ],  relTimePF);
-fprintf(['UPF:                       %3.2f    ', newline ],  relTimeUPF);
-fprintf(['PFC:                       %3.2f    ', newline ],  relTimePFC);
-fprintf(['UPFC:                      %3.2f    ', newline ],  relTimeUPFC);
-fprintf(['PFS:                       %3.2f    ', newline ],  relTimePFS);
-fprintf(['UPFS:                      %3.2f    ', newline2],  relTimeUPFS);
+fprintf(['PF:                        %3.4f    ', newline ],  relTimePF);
+fprintf(['UPF:                       %3.4f    ', newline ],  relTimeUPF);
+fprintf(['PFC:                       %3.4f    ', newline ],  relTimePFC);
+fprintf(['UPFC:                      %3.4f    ', newline ],  relTimeUPFC);
+fprintf(['PFS:                       %3.4f    ', newline ],  relTimePFS);
+fprintf(['UPFS:                      %3.4f    ', newline2],  relTimeUPFS);
 
 fprintf(['Mean no. of weights set to zero:    ', newline ]);
 fprintf(['PFC:                       %2i (%3.2f %%)', newline ], totalNZeroWeightsPFC,  relNZeroWeightsPFC);
@@ -680,7 +684,7 @@ plotBoxPlots([reshape(errorsPF', 1, []); reshape(errorsUPF', 1, []); reshape(err
     [fileName, ' -- box plot of errors after ', num2str(nRuns), ' runs']);
 
 savePlots2PDF(logFilePath, [logFileName, '-results'], true);
-
+%%
 diary off
 
 save([logFilePath, logFileName, '.mat']);
